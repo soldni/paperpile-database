@@ -7802,6 +7802,40 @@
   arxivid       = "2305.12517"
 }
 
+@ARTICLE{Saad-Falcon2023-gg,
+  title         = "{UDAPDR}: Unsupervised domain adaptation via {LLM} prompting
+                   and distillation of rerankers",
+  author        = "Saad-Falcon, Jon and Khattab, Omar and Santhanam, Keshav and
+                   Florian, Radu and Franz, Martin and Roukos, Salim and Sil,
+                   Avirup and Sultan, Md Arafat and Potts, Christopher",
+  abstract      = "Many information retrieval tasks require large labeled
+                   datasets for fine-tuning. However, such datasets are often
+                   unavailable, and their utility for real-world applications
+                   can diminish quickly due to domain shifts. To address this
+                   challenge, we develop and motivate a method for using large
+                   language models (LLMs) to generate large numbers of
+                   synthetic queries cheaply. The method begins by generating a
+                   small number of synthetic queries using an expensive LLM.
+                   After that, a much less expensive one is used to create
+                   large numbers of synthetic queries, which are used to
+                   fine-tune a family of reranker models. These rerankers are
+                   then distilled into a single efficient retriever for use in
+                   the target domain. We show that this technique boosts
+                   zero-shot accuracy in long-tail domains, even where only 2K
+                   synthetic queries are used for fine-tuning, and that it
+                   achieves substantially lower latency than standard reranking
+                   methods. We make our end-to-end approach, including our
+                   synthetic datasets and replication code, publicly available
+                   on Github: https://github.com/primeqa/primeqa.",
+  month         =  mar,
+  year          =  2023,
+  copyright     = "http://creativecommons.org/licenses/by/4.0/",
+  archivePrefix = "arXiv",
+  eprint        = "2303.00807",
+  primaryClass  = "cs.IR",
+  arxivid       = "2303.00807"
+}
+
 @ARTICLE{Hedderich2020-bt,
   title         = "A survey on recent approaches for natural language
                    processing in low-resource scenarios",
