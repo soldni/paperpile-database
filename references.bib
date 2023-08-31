@@ -343,6 +343,44 @@
   doi       = "10.1145/3539618.3592032"
 }
 
+@INPROCEEDINGS{Nguyen2023-hw,
+  title     = "Adapting Learned Sparse Retrieval for Long Documents",
+  booktitle = "Proceedings of the 46th International {ACM} {SIGIR} Conference
+               on Research and Development in Information Retrieval",
+  author    = "Nguyen, Thong and MacAvaney, Sean and Yates, Andrew",
+  abstract  = "Learned sparse retrieval (LSR) is a family of neural retrieval
+               methods that transform queries and documents into sparse weight
+               vectors aligned with a vocabulary. While LSR approaches like
+               Splade work well for short passages, it is unclear how well they
+               handle longer documents. We investigate existing aggregation
+               approaches for adapting LSR to longer documents and find that
+               proximal scoring is crucial for LSR to handle long documents. To
+               leverage this property, we proposed two adaptations of the
+               Sequential Dependence Model (SDM) to LSR: ExactSDM and SoftSDM.
+               ExactSDM assumes only exact query term dependence, while SoftSDM
+               uses potential functions that model the dependence of query
+               terms and their expansion terms (i.e., terms identified using a
+               transformer's masked language modeling head).Experiments on the
+               MSMARCO Document and TREC Robust04 datasets demonstrate that
+               both ExactSDM and SoftSDM outperform existing LSR aggregation
+               approaches for different document length constraints.
+               Surprisingly, SoftSDM does not provide any performance benefits
+               over ExactSDM. This suggests that soft proximity matching is not
+               necessary for modeling term dependence in LSR. Overall, this
+               study provides insights into handling long documents with LSR,
+               proposing adaptations that improve its performance.",
+  publisher = "Association for Computing Machinery",
+  pages     = "1781--1785",
+  series    = "SIGIR '23",
+  month     =  jul,
+  year      =  2023,
+  address   = "New York, NY, USA",
+  keywords  = "learned sparse retrieval, long documents, term proximity",
+  location  = "Taipei, Taiwan",
+  isbn      = "9781450394086",
+  doi       = "10.1145/3539618.3591943"
+}
+
 @ARTICLE{Izacard2020-zn,
   title         = "Leveraging Passage Retrieval with Generative Models for Open
                    Domain Question Answering",
