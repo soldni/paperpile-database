@@ -3575,6 +3575,43 @@
   language = "en"
 }
 
+@ARTICLE{Borgeaud2021-uv,
+  title         = "Improving language models by retrieving from trillions of
+                   tokens",
+  author        = "Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan
+                   and Cai, Trevor and Rutherford, Eliza and Millican, Katie and
+                   van den Driessche, George and Lespiau, Jean-Baptiste and
+                   Damoc, Bogdan and Clark, Aidan and Casas, Diego de Las and
+                   Guy, Aurelia and Menick, Jacob and Ring, Roman and Hennigan,
+                   Tom and Huang, Saffron and Maggiore, Loren and Jones, Chris
+                   and Cassirer, Albin and Brock, Andy and Paganini, Michela and
+                   Irving, Geoffrey and Vinyals, Oriol and Osindero, Simon and
+                   Simonyan, Karen and Rae, Jack W and Elsen, Erich and Sifre,
+                   Laurent",
+  abstract      = "We enhance auto-regressive language models by conditioning on
+                   document chunks retrieved from a large corpus, based on local
+                   similarity with preceding tokens. With a $2$ trillion token
+                   database, our Retrieval-Enhanced Transformer (RETRO) obtains
+                   comparable performance to GPT-3 and Jurassic-1 on the Pile,
+                   despite using 25$\times$ fewer parameters. After fine-tuning,
+                   RETRO performance translates to downstream
+                   knowledge-intensive tasks such as question answering. RETRO
+                   combines a frozen Bert retriever, a differentiable encoder
+                   and a chunked cross-attention mechanism to predict tokens
+                   based on an order of magnitude more data than what is
+                   typically consumed during training. We typically train RETRO
+                   from scratch, yet can also rapidly RETROfit pre-trained
+                   transformers with retrieval and still achieve good
+                   performance. Our work opens up new avenues for improving
+                   language models through explicit memory at unprecedented
+                   scale.",
+  month         =  dec,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2112.04426"
+}
+
 @ARTICLE{Ni2021-ku,
   title         = "Large Dual Encoders Are Generalizable Retrievers",
   author        = "Ni, Jianmo and Qu, Chen and Lu, Jing and Dai, Zhuyun and
