@@ -6416,6 +6416,41 @@
   year      =  2015
 }
 
+@ARTICLE{Wang2023-zf,
+  title         = "Mitigating the impact of false negatives in dense retrieval
+                   with contrastive confidence regularization",
+  author        = "Wang, Shiqi and Zhang, Yeqin and Nguyen, Cam-Tu",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "In open-domain Question Answering (QA), dense retrieval is
+                   crucial for finding relevant passages for answer generation.
+                   Typically, contrastive learning is used to train a retrieval
+                   model that maps passages and queries to the same semantic
+                   space. The objective is to make similar ones closer and
+                   dissimilar ones further apart. However, training such a
+                   system is challenging due to the false negative issue, where
+                   relevant passages may be missed during data annotation. Hard
+                   negative sampling, which is commonly used to improve
+                   contrastive learning, can introduce more noise in training.
+                   This is because hard negatives are those closer to a given
+                   query, and thus more likely to be false negatives. To address
+                   this issue, we propose a novel contrastive confidence
+                   regularizer for Noise Contrastive Estimation (NCE) loss, a
+                   commonly used loss for dense retrieval. Our analysis shows
+                   that the regularizer helps dense retrieval models be more
+                   robust against false negatives with a theoretical guarantee.
+                   Additionally, we propose a model-agnostic method to filter
+                   out noisy negative passages in the dataset, improving any
+                   downstream dense retrieval models. Through experiments on
+                   three datasets, we demonstrate that our method achieves
+                   better retrieval performance in comparison to existing
+                   state-of-the-art dense retrieval systems.",
+  month         =  dec,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2401.00165"
+}
+
 @ARTICLE{Webber2010-ct,
   title     = "A similarity measure for indefinite rankings",
   author    = "Webber, William and Moffat, Alistair and Zobel, Justin",
