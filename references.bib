@@ -1,3 +1,604 @@
+@INPROCEEDINGS{Guo2017-zy,
+  title     = "On Calibration of Modern Neural Networks",
+  author    = "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q",
+  booktitle = "International Conference on Machine Learning",
+  pages     = "1321--1330",
+  abstract  = "Confidence calibration – the problem of predicting probability
+               estimates representative of the true correctness likelihood – is
+               important for classification models in many applications. We
+               discover...",
+  month     =  jul,
+  year      =  2017,
+  language  = "en"
+}
+
+@ARTICLE{Vaswani2017-ue,
+  title    = "Attention Is All You Need",
+  author   = "Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit,
+              Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Lukasz and
+              Polosukhin, Illia",
+  journal  = "arXiv:1706.03762 [cs]",
+  abstract = "The dominant sequence transduction models are based on complex
+              recurrent or convolutional neural networks in an encoder-decoder
+              configuration. The best performing models also connect the encoder
+              and decoder through an attention mechanism. We propose a new
+              simple network architecture, the Transformer, based solely on
+              attention mechanisms, dispensing with recurrence and convolutions
+              entirely. Experiments on two machine translation tasks show these
+              models to be superior in quality while being more parallelizable
+              and requiring significantly less time to train. Our model achieves
+              28.4 BLEU on the WMT 2014 English-to-German translation task,
+              improving over the existing best results, including ensembles by
+              over 2 BLEU. On the WMT 2014 English-to-French translation task,
+              our model establishes a new single-model state-of-the-art BLEU
+              score of 41.8 after training for 3.5 days on eight GPUs, a small
+              fraction of the training costs of the best models from the
+              literature. We show that the Transformer generalizes well to other
+              tasks by applying it successfully to English constituency parsing
+              both with large and limited training data.",
+  month    =  jun,
+  year     =  2017
+}
+
+@INPROCEEDINGS{Kim2018-bu,
+  title     = "Joint Learning of Domain Classification and Out-of-Domain
+               Detection with Dynamic Class Weighting for Satisficing False
+               Acceptance Rates",
+  author    = "Kim, Joo-Kyung and Kim, Young-Bum",
+  booktitle = "arXiv:1807.00072 [cs]",
+  abstract  = "In domain classification for spoken dialog systems, correct
+               detection of out-of-domain (OOD) utterances is crucial because it
+               reduces confusion and unnecessary interaction costs between users
+               and the systems. Previous work usually utilizes OOD detectors
+               that are trained separately from in-domain (IND) classifiers, and
+               confidence thresholding for OOD detection given target evaluation
+               scores. In this paper, we introduce a neural joint learning model
+               for domain classification and OOD detection, where dynamic class
+               weighting is used during the model training to satisfice a given
+               OOD false acceptance rate (FAR) while maximizing the domain
+               classification accuracy. Evaluating on two domain classification
+               tasks for the utterances from a large spoken dialogue system, we
+               show that our approach significantly improves the domain
+               classification performance with satisficing given target FARs.",
+  month     =  jun,
+  year      =  2018
+}
+
+@INPROCEEDINGS{Kim2018-bm,
+  title     = "A Scalable Neural Shortlisting-Reranking Approach for Large-Scale
+               Domain Classification in Natural Language Understanding",
+  author    = "Kim, Young-Bum and Kim, Dongchan and Kim, Joo-Kyung and Sarikaya,
+               Ruhi",
+  booktitle = "Proceedings of the 2018 Conference of the North American Chapter
+               of the Association for Computational Linguistics: Human Language
+               Technologies, Volume 3 (Industry Papers)",
+  volume    =  3,
+  pages     = "16--24",
+  year      =  2018,
+  doi       = "10.18653/v1/N18-3003",
+  language  = "en"
+}
+
+@ARTICLE{Artetxe2017-ju,
+  title    = "Unsupervised Neural Machine Translation",
+  author   = "Artetxe, Mikel and Labaka, Gorka and Agirre, Eneko and Cho,
+              Kyunghyun",
+  journal  = "arXiv:1710.11041 [cs]",
+  abstract = "In spite of the recent success of neural machine translation (NMT)
+              in standard benchmarks, the lack of large parallel corpora poses a
+              major practical problem for many language pairs. There have been
+              several proposals to alleviate this issue with, for instance,
+              triangulation and semi-supervised learning techniques, but they
+              still require a strong cross-lingual signal. In this work, we
+              completely remove the need of parallel data and propose a novel
+              method to train an NMT system in a completely unsupervised manner,
+              relying on nothing but monolingual corpora. Our model builds upon
+              the recent work on unsupervised embedding mappings, and consists
+              of a slightly modified attentional encoder-decoder model that can
+              be trained on monolingual corpora alone using a combination of
+              denoising and backtranslation. Despite the simplicity of the
+              approach, our system obtains 15.56 and 10.21 BLEU points in WMT
+              2014 French-to-English and German-to-English translation. The
+              model can also profit from small parallel corpora, and attains
+              21.81 and 15.24 points when combined with 100,000 parallel
+              sentences, respectively. Our implementation is released as an open
+              source project.",
+  month    =  oct,
+  year     =  2017
+}
+
+@ARTICLE{Niculae2017-zy,
+  title    = "A Regularized Framework for Sparse and Structured Neural Attention",
+  author   = "Niculae, Vlad and Blondel, Mathieu",
+  journal  = "arXiv:1705.07704 [cs, stat]",
+  abstract = "Modern neural networks are often augmented with an attention
+              mechanism, which tells the network where to focus within the
+              input. We propose in this paper a new framework for sparse and
+              structured attention, building upon a smoothed max operator. We
+              show that the gradient of this operator defines a mapping from
+              real values to probabilities, suitable as an attention mechanism.
+              Our framework includes softmax and a slight generalization of the
+              recently-proposed sparsemax as special cases. However, we also
+              show how our framework can incorporate modern structured
+              penalties, resulting in more interpretable attention mechanisms,
+              that focus on entire segments or groups of an input. We derive
+              efficient algorithms to compute the forward and backward passes of
+              our attention mechanisms, enabling their use in a neural network
+              trained with backpropagation. To showcase their potential as a
+              drop-in replacement for existing ones, we evaluate our attention
+              mechanisms on three large-scale tasks: textual entailment, machine
+              translation, and sentence summarization. Our attention mechanisms
+              improve interpretability without sacrificing performance; notably,
+              on textual entailment and summarization, we outperform the
+              standard attention mechanisms based on softmax and sparsemax.",
+  month    =  may,
+  year     =  2017
+}
+
+@ARTICLE{Wu2018-fb,
+  title    = "Group Normalization",
+  author   = "Wu, Yuxin and He, Kaiming",
+  journal  = "arXiv:1803.08494 [cs]",
+  abstract = "Batch Normalization (BN) is a milestone technique in the
+              development of deep learning, enabling various networks to train.
+              However, normalizing along the batch dimension introduces problems
+              --- BN's error increases rapidly when the batch size becomes
+              smaller, caused by inaccurate batch statistics estimation. This
+              limits BN's usage for training larger models and transferring
+              features to computer vision tasks including detection,
+              segmentation, and video, which require small batches constrained
+              by memory consumption. In this paper, we present Group
+              Normalization (GN) as a simple alternative to BN. GN divides the
+              channels into groups and computes within each group the mean and
+              variance for normalization. GN's computation is independent of
+              batch sizes, and its accuracy is stable in a wide range of batch
+              sizes. On ResNet-50 trained in ImageNet, GN has 10.6\% lower error
+              than its BN counterpart when using a batch size of 2; when using
+              typical batch sizes, GN is comparably good with BN and outperforms
+              other normalization variants. Moreover, GN can be naturally
+              transferred from pre-training to fine-tuning. GN can outperform
+              its BN-based counterparts for object detection and segmentation in
+              COCO, and for video classification in Kinetics, showing that GN
+              can effectively replace the powerful BN in a variety of tasks. GN
+              can be easily implemented by a few lines of code in modern
+              libraries.",
+  month    =  mar,
+  year     =  2018
+}
+
+@ARTICLE{Conneau2018-hl,
+  title    = "What you can cram into a single vector: Probing sentence
+              embeddings for linguistic properties",
+  author   = "Conneau, Alexis and Kruszewski, German and Lample, Guillaume and
+              Barrault, Loïc and Baroni, Marco",
+  journal  = "arXiv:1805.01070 [cs]",
+  abstract = "Although much effort has recently been devoted to training
+              high-quality sentence embeddings, we still have a poor
+              understanding of what they are capturing. ``Downstream'' tasks,
+              often based on sentence classification, are commonly used to
+              evaluate the quality of sentence representations. The complexity
+              of the tasks makes it however difficult to infer what kind of
+              information is present in the representations. We introduce here
+              10 probing tasks designed to capture simple linguistic features of
+              sentences, and we use them to study embeddings generated by three
+              different encoders trained in eight distinct ways, uncovering
+              intriguing properties of both encoders and training methods.",
+  month    =  may,
+  year     =  2018
+}
+
+@ARTICLE{Choudhury2017-vb,
+  title    = "The Language of Social Support in Social Media and its Effect on
+              Suicidal Ideation Risk",
+  author   = "Choudhury, Munmun De and Kiciman, Emre",
+  journal  = "Microsoft Research",
+  abstract = "Online social support is known to play a signiﬁcant role in mental
+              well-being. However, current research is limited in its ability to
+              quantify this link. Challenges exist due to the paucity of
+              longitudinal, pre- and post-mental illness risk data, and reliable
+              methods that can examine causality between past availability of
+              support and future risk. In …",
+  month    =  mar,
+  year     =  2017,
+  language = "en-US"
+}
+
+@ARTICLE{Choudhury2013-rp,
+  title    = "Predicting Depression via Social Media",
+  author   = "Choudhury, Munmun De and Gamon, Michael and Counts, Scott and
+              Horvitz, Eric",
+  journal  = "Microsoft Research",
+  abstract = "Major depression constitutes a serious challenge in personal and
+              public health. Tens of millions of people each year suffer from
+              depression and only a fraction receives adequate treatment. We
+              explore the potential to use social media to detect and diagnose
+              major depressive disorder in individuals. We first employ
+              crowdsourcing to compile a set of Twitter …",
+  month    =  jul,
+  year     =  2013,
+  language = "en-US"
+}
+
+@INPROCEEDINGS{Coppersmith2017-wf,
+  title     = "Scalable mental health analysis in the clinical whitespace via
+               natural language processing",
+  author    = "Coppersmith, G and Hilland, C and Frieder, O and Leary, R",
+  booktitle = "2017 IEEE EMBS International Conference on Biomedical Health
+               Informatics (BHI)",
+  pages     = "393--396",
+  abstract  = "Our increasingly digital life provides a wealth of data about our
+               behavior, beliefs, mood, and well-being. This data provides some
+               insight into the lives of patients outside the healthcare
+               setting, and in aggregate can be insightful for the person's
+               mental health and emotional crisis. Here, we introduce this
+               community to some of the recent advancement in using natural
+               language processing and machine learning to provide insight into
+               mental health of both individuals and populations. We advocate
+               using these linguistic signals as a supplement to those that are
+               collected in the health care system, filling in some of the
+               so-called “whitespace” between visits.",
+  month     =  feb,
+  year      =  2017,
+  doi       = "10.1109/BHI.2017.7897288"
+}
+
+@INPROCEEDINGS{Soldaini2015-va,
+  title     = "Retrieving Medical Literature for Clinical Decision Support",
+  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
+               Nazli and Frieder, Ophir",
+  booktitle = "Advances in Information Retrieval",
+  publisher = "Springer, Cham",
+  pages     = "538--549",
+  abstract  = "Keeping current given the vast volume of medical literature
+               published yearly poses a serious challenge for medical
+               professionals. Thus, interest in systems that aid physicians in
+               making clinical decisions is intensifying. A task of Clinical
+               Decision Support (CDS) systems is retrieving highly relevant
+               medical literature that could help healthcare professionals in
+               formulating diagnoses or determining treatments. This search task
+               is atypical as the queries are medical case reports, which
+               differs in terms of size and structure from queries in other,
+               more common search tasks. We apply query reformulation techniques
+               to address literature search based on case reports. The proposed
+               system achieves a statistically significant improvement over the
+               baseline (29\% – 32\%) and the state-of-the-art (12\% – 59\%).",
+  series    = "Lecture Notes in Computer Science",
+  month     =  mar,
+  year      =  2015,
+  doi       = "10.1007/978-3-319-16354-3\_59",
+  isbn      = "9783319163536,9783319163543",
+  language  = "en"
+}
+
+@INPROCEEDINGS{Cohan2015-cb,
+  title     = "Matching Citation Text and Cited Spans in Biomedical Literature:
+               a Search-Oriented Approach",
+  author    = "Cohan, Arman and Soldaini, Luca and Goharian, Nazli",
+  booktitle = "Proceedings of the 2015 Conference of the North American Chapter
+               of the Association for Computational Linguistics: Human Language
+               Technologies",
+  publisher = "Association for Computational Linguistics",
+  address   = "Denver, Colorado",
+  pages     = "1042–1048",
+  year      =  2015
+}
+
+@ARTICLE{Su2018-sc,
+  title         = "A Re-ranker Scheme for Integrating Large Scale {NLU} models",
+  author        = "Su, Chengwei and Gupta, Rahul and Ananthakrishnan, Shankar
+                   and Matsoukas, Spyros",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large scale Natural Language Understanding (NLU) systems are
+                   typically trained on large quantities of data, requiring a
+                   fast and scalable training strategy. A typical design for NLU
+                   systems consists of domain-level NLU modules (domain
+                   classifier, intent classifier and named entity recognizer).
+                   Hypotheses (NLU interpretations consisting of various
+                   intent+slot combinations) from these domain specific modules
+                   are typically aggregated with another downstream component.
+                   The re-ranker integrates outputs from domain-level
+                   recognizers, returning a scored list of cross domain
+                   hypotheses. An ideal re-ranker will exhibit the following two
+                   properties: (a) it should prefer the most relevant hypothesis
+                   for the given input as the top hypothesis and, (b) the
+                   interpretation scores corresponding to each hypothesis
+                   produced by the re-ranker should be calibrated. Calibration
+                   allows the final NLU interpretation score to be comparable
+                   across domains. We propose a novel re-ranker strategy that
+                   addresses these aspects, while also maintaining domain
+                   specific modularity. We design optimization loss functions
+                   for such a modularized re-ranker and present results on
+                   decreasing the top hypothesis error rate as well as
+                   maintaining the model calibration. We also experiment with an
+                   extension involving training the domain specific re-rankers
+                   on datasets curated independently by each domain to allow
+                   further asynchronization. \%The proposed re-ranker design
+                   showcases the following: (i) improved NLU performance over an
+                   unweighted aggregation strategy, (ii) cross-domain calibrated
+                   performance and, (iii) support for use cases involving
+                   training each re-ranker on datasets curated by each domain
+                   independently.",
+  month         =  sep,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1809.09605",
+  language      = "en"
+}
+
+@INPROCEEDINGS{Duh2008-lm,
+  title     = "Learning to Rank with Partially-labeled Data",
+  author    = "Duh, Kevin and Kirchhoff, Katrin",
+  booktitle = "Proceedings of the 31st Annual International ACM SIGIR Conference
+               on Research and Development in Information Retrieval",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  pages     = "251--258",
+  series    = "SIGIR '08",
+  year      =  2008,
+  keywords  = "boosting, information retrieval, kernel principal components
+               analysis, learning to rank, transductive learning",
+  doi       = "10.1145/1390334.1390379",
+  isbn      =  9781605581644
+}
+
+@ARTICLE{Peters2018-be,
+  title         = "Deep contextualized word representations",
+  author        = "Peters, Matthew E and Neumann, Mark and Iyyer, Mohit and
+                   Gardner, Matt and Clark, Christopher and Lee, Kenton and
+                   Zettlemoyer, Luke",
+  journal       = "arXiv:1802.05365 [cs]",
+  abstract      = "We introduce a new type of deep contextualized word
+                   representation that models both (1) complex characteristics
+                   of word use (e.g., syntax and semantics), and (2) how these
+                   uses vary across linguistic contexts (i.e., to model
+                   polysemy). Our word vectors are learned functions of the
+                   internal states of a deep bidirectional language model
+                   (biLM), which is pre-trained on a large text corpus. We show
+                   that these representations can be easily added to existing
+                   models and significantly improve the state of the art across
+                   six challenging NLP problems, including question answering,
+                   textual entailment and sentiment analysis. We also present an
+                   analysis showing that exposing the deep internals of the
+                   pre-trained network is crucial, allowing downstream models to
+                   mix different types of semi-supervision signals.",
+  month         =  feb,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1802.05365"
+}
+
+@ARTICLE{Sennrich2015-qp,
+  title         = "Neural Machine Translation of Rare Words with Subword Units",
+  author        = "Sennrich, Rico and Haddow, Barry and Birch, Alexandra",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Neural machine translation (NMT) models typically operate
+                   with a fixed vocabulary, but translation is an
+                   open-vocabulary problem. Previous work addresses the
+                   translation of out-of-vocabulary words by backing off to a
+                   dictionary. In this paper, we introduce a simpler and more
+                   effective approach, making the NMT model capable of
+                   open-vocabulary translation by encoding rare and unknown
+                   words as sequences of subword units. This is based on the
+                   intuition that various word classes are translatable via
+                   smaller units than words, for instance names (via character
+                   copying or transliteration), compounds (via compositional
+                   translation), and cognates and loanwords (via phonological
+                   and morphological transformations). We discuss the
+                   suitability of different word segmentation techniques,
+                   including simple character n-gram models and a segmentation
+                   based on the byte pair encoding compression algorithm, and
+                   empirically show that subword models improve over a back-off
+                   dictionary baseline for the WMT 15 translation tasks
+                   English-German and English-Russian by 1.1 and 1.3 BLEU,
+                   respectively.",
+  month         =  aug,
+  year          =  2015,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1508.07909"
+}
+
+@ARTICLE{Tai2015-yt,
+  title         = "Improved Semantic Representations From Tree-Structured Long
+                   Short-Term Memory Networks",
+  author        = "Tai, Kai Sheng and Socher, Richard and Manning, Christopher D",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Because of their superior ability to preserve sequence
+                   information over time, Long Short-Term Memory (LSTM)
+                   networks, a type of recurrent neural network with a more
+                   complex computational unit, have obtained strong results on a
+                   variety of sequence modeling tasks. The only underlying LSTM
+                   structure that has been explored so far is a linear chain.
+                   However, natural language exhibits syntactic properties that
+                   would naturally combine words to phrases. We introduce the
+                   Tree-LSTM, a generalization of LSTMs to tree-structured
+                   network topologies. Tree-LSTMs outperform all existing
+                   systems and strong LSTM baselines on two tasks: predicting
+                   the semantic relatedness of two sentences (SemEval 2014, Task
+                   1) and sentiment classification (Stanford Sentiment
+                   Treebank).",
+  month         =  feb,
+  year          =  2015,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1503.00075"
+}
+
+@ARTICLE{Luong2015-np,
+  title    = "Effective Approaches to Attention-based Neural Machine Translation",
+  author   = "Luong, Minh-Thang and Pham, Hieu and Manning, Christopher D",
+  journal  = "arXiv:1508.04025 [cs]",
+  abstract = "An attentional mechanism has lately been used to improve neural
+              machine translation (NMT) by selectively focusing on parts of the
+              source sentence during translation. However, there has been little
+              work exploring useful architectures for attention-based NMT. This
+              paper examines two simple and effective classes of attentional
+              mechanism: a global approach which always attends to all source
+              words and a local one that only looks at a subset of source words
+              at a time. We demonstrate the effectiveness of both approaches
+              over the WMT translation tasks between English and German in both
+              directions. With local attention, we achieve a significant gain of
+              5.0 BLEU points over non-attentional systems which already
+              incorporate known techniques such as dropout. Our ensemble model
+              using different attention architectures has established a new
+              state-of-the-art result in the WMT'15 English to German
+              translation task with 25.9 BLEU points, an improvement of 1.0 BLEU
+              points over the existing best system backed by NMT and an n-gram
+              reranker.",
+  month    =  aug,
+  year     =  2015,
+  language = "en"
+}
+
+@ARTICLE{Bahdanau2014-en,
+  title    = "Neural Machine Translation by Jointly Learning to Align and
+              Translate",
+  author   = "Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua",
+  journal  = "arXiv:1409.0473 [cs, stat]",
+  abstract = "Neural machine translation is a recently proposed approach to
+              machine translation. Unlike the traditional statistical machine
+              translation, the neural machine translation aims at building a
+              single neural network that can be jointly tuned to maximize the
+              translation performance. The models proposed recently for neural
+              machine translation often belong to a family of encoder–decoders
+              and encode a source sentence into a ﬁxed-length vector from which
+              a decoder generates a translation. In this paper, we conjecture
+              that the use of a ﬁxed-length vector is a bottleneck in improving
+              the performance of this basic encoder–decoder architecture, and
+              propose to extend this by allowing a model to automatically
+              (soft-)search for parts of a source sentence that are relevant to
+              predicting a target word, without having to form these parts as a
+              hard segment explicitly. With this new approach, we achieve a
+              translation performance comparable to the existing
+              state-of-the-art phrase-based system on the task of
+              English-to-French translation. Furthermore, qualitative analysis
+              reveals that the (soft-)alignments found by the model agree well
+              with our intuition.",
+  month    =  sep,
+  year     =  2014,
+  language = "en"
+}
+
+@ARTICLE{Conneau2017-fb,
+  title         = "Word Translation Without Parallel Data",
+  author        = "Conneau, Alexis and Lample, Guillaume and Ranzato,
+                   Marc'aurelio and Denoyer, Ludovic and Jégou, Hervé",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "State-of-the-art methods for learning cross-lingual word
+                   embeddings have relied on bilingual dictionaries or parallel
+                   corpora. Recent studies showed that the need for parallel
+                   data supervision can be alleviated with character-level
+                   information. While these methods showed encouraging results,
+                   they are not on par with their supervised counterparts and
+                   are limited to pairs of languages sharing a common alphabet.
+                   In this work, we show that we can build a bilingual
+                   dictionary between two languages without using any parallel
+                   corpora, by aligning monolingual word embedding spaces in an
+                   unsupervised way. Without using any character information,
+                   our model even outperforms existing supervised methods on
+                   cross-lingual tasks for some language pairs. Our experiments
+                   demonstrate that our method works very well also for distant
+                   language pairs, like English-Russian or English-Chinese. We
+                   finally describe experiments on the English-Esperanto
+                   low-resource language pair, on which there only exists a
+                   limited amount of parallel data, to show the potential impact
+                   of our method in fully unsupervised machine translation. Our
+                   code, embeddings and dictionaries are publicly available.",
+  month         =  oct,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1710.04087"
+}
+
+@INPROCEEDINGS{Metzler2005-ql,
+  title     = "A Markov random field model for term dependencies",
+  author    = "Metzler, Donald and Croft, W Bruce",
+  booktitle = "Proceedings of the 28th annual international ACM SIGIR conference
+               on Research and development in information retrieval",
+  publisher = "Association for Computing Machinery",
+  address   = "New York, NY, USA",
+  pages     = "472--479",
+  series    = "SIGIR '05",
+  month     =  aug,
+  year      =  2005,
+  keywords  = "term dependence, phrases, information retrieval, Markov random
+               fields",
+  doi       = "10.1145/1076034.1076115",
+  isbn      =  9781595930347
+}
+
+@ARTICLE{Mu2023-ti,
+  title         = "Learning to compress prompts with gist tokens",
+  author        = "Mu, Jesse and Li, Xiang Lisa and Goodman, Noah",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Prompting is the primary way to utilize the multitask
+                   capabilities of language models (LMs), but prompts occupy
+                   valuable space in the input context window, and repeatedly
+                   encoding the same prompt is computationally inefficient.
+                   Finetuning and distillation methods allow for specialization
+                   of LMs without prompting, but require retraining the model
+                   for each task. To avoid this trade-off entirely, we present
+                   gisting, which trains an LM to compress prompts into smaller
+                   sets of ``gist'' tokens which can be cached and reused for
+                   compute efficiency. Gist models can be trained with no
+                   additional cost over standard instruction finetuning by
+                   simply modifying Transformer attention masks to encourage
+                   prompt compression. On decoder (LLaMA-7B) and encoder-decoder
+                   (FLAN-T5-XXL) LMs, gisting enables up to 26x compression of
+                   prompts, resulting in up to 40\% FLOPs reductions, 4.2\% wall
+                   time speedups, and storage savings, all with minimal loss in
+                   output quality.",
+  month         =  apr,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2304.08467"
+}
+
+@ARTICLE{Yao2022-kh,
+  title         = "{ReAct}: Synergizing Reasoning and Acting in Language Models",
+  author        = "Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and
+                   Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "While large language models (LLMs) have demonstrated
+                   impressive capabilities across tasks in language
+                   understanding and interactive decision making, their
+                   abilities for reasoning (e.g. chain-of-thought prompting) and
+                   acting (e.g. action plan generation) have primarily been
+                   studied as separate topics. In this paper, we explore the use
+                   of LLMs to generate both reasoning traces and task-specific
+                   actions in an interleaved manner, allowing for greater
+                   synergy between the two: reasoning traces help the model
+                   induce, track, and update action plans as well as handle
+                   exceptions, while actions allow it to interface with external
+                   sources, such as knowledge bases or environments, to gather
+                   additional information. We apply our approach, named ReAct,
+                   to a diverse set of language and decision making tasks and
+                   demonstrate its effectiveness over state-of-the-art
+                   baselines, as well as improved human interpretability and
+                   trustworthiness over methods without reasoning or acting
+                   components. Concretely, on question answering (HotpotQA) and
+                   fact verification (Fever), ReAct overcomes issues of
+                   hallucination and error propagation prevalent in
+                   chain-of-thought reasoning by interacting with a simple
+                   Wikipedia API, and generates human-like task-solving
+                   trajectories that are more interpretable than baselines
+                   without reasoning traces. On two interactive decision making
+                   benchmarks (ALFWorld and WebShop), ReAct outperforms
+                   imitation and reinforcement learning methods by an absolute
+                   success rate of 34\% and 10\% respectively, while being
+                   prompted with only one or two in-context examples. Project
+                   site with code: https://react-lm.github.io",
+  month         =  oct,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2210.03629"
+}
+
 @ARTICLE{Rosa2022-sv,
   title     = "No parameter left behind: How distillation and model size affect
                zero-shot retrieval",
@@ -28,6 +629,677 @@
   eprint    = "2206.02873",
   doi       = "10.48550/ARXIV.2206.02873",
   language  = "en"
+}
+
+@ARTICLE{Nie2015-of,
+  title    = "Disease Inference from Health-Related Questions via Sparse Deep
+              Learning",
+  author   = "Nie, L and Wang, M and Zhang, L and Yan, S and Zhang, B and Chua,
+              T",
+  journal  = "IEEE transactions on knowledge and data engineering",
+  volume   =  27,
+  number   =  8,
+  pages    = "2107--2119",
+  abstract = "Automatic disease inference is of importance to bridge the gap
+              between what online health seekers with unusual symptoms need and
+              what busy human doctors with biased expertise can offer. However,
+              accurately and efficiently inferring diseases is non-trivial,
+              especially for community-based health services due to the
+              vocabulary gap, incomplete information, correlated medical
+              concepts, and limited high quality training samples. In this
+              paper, we first report a user study on the information needs of
+              health seekers in terms of questions and then select those that
+              ask for possible diseases of their manifested symptoms for further
+              analytic. We next propose a novel deep learning scheme to infer
+              the possible diseases given the questions of health seekers. The
+              proposed scheme is comprised of two key components. The first
+              globally mines the discriminant medical signatures from raw
+              features. The second deems the raw features and their signatures
+              as input nodes in one layer and hidden nodes in the subsequent
+              layer, respectively. Meanwhile, it learns the inter-relations
+              between these two layers via pre-training with pseudo-labeled
+              data. Following that, the hidden nodes serve as raw features for
+              the more abstract signature mining. With incremental and
+              alternative repeating of these two components, our scheme builds a
+              sparsely connected deep architecture with three hidden layers.
+              Overall, it well fits specific tasks with fine-tuning. Extensive
+              experiments on a real-world dataset labeled by online doctors show
+              the significant performance gains of our scheme.",
+  month    =  aug,
+  year     =  2015,
+  keywords = "data mining;diseases;health care;inference mechanisms;information
+              needs;learning (artificial intelligence);medical information
+              systems;pseudolabeled data;abstract signature mining;sparsely
+              connected deep architecture;discriminant medical
+              signatures;information needs;community-based health
+              services;online health seekers;automatic disease inference;sparse
+              deep learning;health-related questions;Diseases;Medical diagnostic
+              imaging;Cancer;Educational institutions;Training;Community-based
+              Health Services;Question Answering;Disease Inference;Deep
+              Learning;Community-based health services;question
+              answering;disease inference;deep learning",
+  doi      = "10.1109/TKDE.2015.2399298",
+  issn     = "1041-4347"
+}
+
+@INPROCEEDINGS{Soldaini2015-sm,
+  title     = "Retrieving medical literature for clinical decision support",
+  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
+               Nazli and Frieder, Ophir",
+  booktitle = "European Conference on Information Retrieval (ECIR)",
+  publisher = "Springer",
+  pages     = "538–549",
+  year      =  2015
+}
+
+@ARTICLE{Frenay2014-fj,
+  title    = "Classification in the presence of label noise: a survey",
+  author   = "Frénay, Benoît and Verleysen, Michel",
+  journal  = "IEEE transactions on neural networks and learning systems",
+  volume   =  25,
+  number   =  5,
+  pages    = "845--869",
+  abstract = "Label noise is an important issue in classification, with many
+              potential negative consequences. For example, the accuracy of
+              predictions may decrease, whereas the complexity of inferred
+              models and the number of necessary training samples may increase.
+              Many works in the literature have been devoted to the study of
+              label noise and the development of techniques to deal with label
+              noise. However, the field lacks a comprehensive survey on the
+              different types of label noise, their consequences and the
+              algorithms that consider label noise. This paper proposes to fill
+              this gap. First, the definitions and sources of label noise are
+              considered and a taxonomy of the types of label noise is proposed.
+              Second, the potential consequences of label noise are discussed.
+              Third, label noise-robust, label noise cleansing, and label
+              noise-tolerant algorithms are reviewed. For each category of
+              approaches, a short discussion is proposed to help the
+              practitioner to choose the most suitable technique in its own
+              particular field of application. Eventually, the design of
+              experiments is also discussed, what may interest the researchers
+              who would like to test their own algorithms. In this paper, label
+              noise consists of mislabeled instances: no additional information
+              is assumed to be available like e.g., confidences on labels.",
+  month    =  may,
+  year     =  2014,
+  doi      = "10.1109/TNNLS.2013.2292894",
+  pmid     =  24808033,
+  issn     = "2162-2388,2162-237X",
+  language = "en"
+}
+
+@INPROCEEDINGS{Divita2014-sm,
+  title     = "Sophia: a expedient {UMLS} concept extraction annotator",
+  author    = "Divita, Guy and Zeng, Qing T and Gundlapalli, Adi V and Duvall,
+               Scott and Nebeker, Jonathan and Samore, Matthew H",
+  booktitle = "AMIA Annual Symposium Proceedings",
+  volume    =  2014,
+  year      =  2014
+}
+
+@INPROCEEDINGS{Pennington2014-dp,
+  title     = "Glove: Global vectors for word representation",
+  author    = "Pennington, Jeffrey and Socher, Richard and Manning, Christopher",
+  booktitle = "Proceedings of the 2014 conference on empirical methods in
+               natural language processing (EMNLP)",
+  pages     = "1532--1543",
+  year      =  2014
+}
+
+@INPROCEEDINGS{Roberts2017-kf,
+  title     = "Overview of the {TREC} 2016 Clinical Decision Support Track",
+  author    = "Roberts, Kirk and Demner-Fushman, Dina and Voorhees, Ellen M and
+               Hersh, William R",
+  booktitle = "TREC",
+  year      =  2017
+}
+
+@INPROCEEDINGS{Soldaini2015-lg,
+  title     = "Retrieving medical literature for clinical decision support",
+  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
+               Nazli and Frieder, Ophir",
+  booktitle = "ECIR",
+  year      =  2015
+}
+
+@INPROCEEDINGS{Cohan2014-jv,
+  title     = "Towards citation-based summarization of biomedical literature",
+  author    = "Cohan, Arman and Soldaini, Luca and Goharian, Nazli",
+  booktitle = "Proceedings of the Text Analysis Conference (TAC'14)",
+  year      =  2014
+}
+
+@ARTICLE{Severyn2015-ai,
+  title     = "Learning to rank short text pairs with convolutional deep neural
+               networks",
+  author    = "Severyn, A and Moschitti, A",
+  journal   = "Proceedings of the 38th international ACM SIGIR",
+  publisher = "dl.acm.org",
+  abstract  = "Learning a similarity function between pairs of objects is at the
+               core of learning to rank approaches. In information retrieval
+               tasks we typically deal with query-document pairs, in question
+               answering--question-answer pairs. However, before learning can
+               take place, such …",
+  year      =  2015
+}
+
+@MISC{Mahelona2023-yw,
+  title        = "{OpenAI}'s Whisper is another case study in Colonisation",
+  author       = "Mahelona, Keoni and Leoni, Gianna and Duncan, Suzanne and
+                  Thompson, Miles",
+  booktitle    = "Papa Reo",
+  abstract     = "Whisper, a speech recognition model trained on 680,000 hours
+                  of audio taken from the web, demonstrates the problems with
+                  Big Tech and data theft.",
+  month        =  jan,
+  year         =  2023,
+  howpublished = "\url{https://blog.papareo.nz/whisper-is-another-case-study-in-colonisation/}",
+  note         = "Accessed: 2024-2-15"
+}
+
+@MISC{UnknownUnknown-mg,
+  title       = "Yi: A series of large language models trained from scratch by
+                 developers @01-ai",
+  institution = "Github",
+  abstract    = "A series of large language models trained from scratch by
+                 developers @01-ai - 01-ai/Yi",
+  language    = "en"
+}
+
+@MISC{Technomancersai2023-rx,
+  title        = "Japan Goes All In: Copyright Doesn't Apply To {AI} Training",
+  author       = "{Technomancersai}",
+  abstract     = "This news is part of Japan's ambitious plan to become a leader
+                  in AI technology.",
+  month        =  jun,
+  year         =  2023,
+  howpublished = "\url{https://cacm.acm.org/news/273479-japan-goes-all-in-copyright-doesnt-apply-to-ai-training/fulltext}",
+  note         = "Accessed: 2024-2-15"
+}
+
+@MISC{UnknownUnknown-as,
+  title        = "Common Crawl - Kagi Search",
+  abstract     = "Better search results with no ads. Welcome to Kagi (pronounced
+                  kah-gee), a paid search engine that gives power back to the
+                  user.",
+  howpublished = "\url{https://kagi.com/search?q=Common+Crawl}",
+  note         = "Accessed: 2023-11-29"
+}
+
+@ARTICLE{Min2023-ty,
+  title         = "{SILO} language models: Isolating legal risk in a
+                   nonparametric datastore",
+  author        = "Min, Sewon and Gururangan, Suchin and Wallace, Eric and
+                   Hajishirzi, Hannaneh and Smith, Noah A and Zettlemoyer, Luke",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "The legality of training language models (LMs) on copyrighted
+                   or otherwise restricted data is under intense debate.
+                   However, as we show, model performance significantly degrades
+                   if trained only on low-risk text (e.g., out-of-copyright
+                   books or government documents), due to its limited size and
+                   domain coverage. We present SILO, a new language model that
+                   manages this risk-performance tradeoff during inference. SILO
+                   is built by (1) training a parametric LM on Open License
+                   Corpus (OLC), a new corpus we curate with 228B tokens of
+                   public domain and permissively licensed text and (2)
+                   augmenting it with a more general and easily modifiable
+                   nonparametric datastore (e.g., containing copyrighted books
+                   or news) that is only queried during inference. The datastore
+                   allows use of high-risk data without training on it, supports
+                   sentence-level data attribution, and enables data producers
+                   to opt out from the model by removing content from the store.
+                   These capabilities can foster compliance with data-use
+                   regulations such as the fair use doctrine in the United
+                   States and the GDPR in the European Union. Our experiments
+                   show that the parametric LM struggles on domains not covered
+                   by OLC. However, access to the datastore greatly improves out
+                   of domain performance, closing 90\% of the performance gap
+                   with an LM trained on the Pile, a more diverse corpus with
+                   mostly high-risk text. We also analyze which nonparametric
+                   approach works best, where the remaining errors lie, and how
+                   performance scales with datastore size. Our results suggest
+                   that it is possible to build high quality language models
+                   while mitigating their legal risk.",
+  month         =  aug,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2308.04430"
+}
+
+@ARTICLE{Ram2023-rl,
+  title         = "In-Context retrieval-augmented language models",
+  author        = "Ram, Ori and Levine, Yoav and Dalmedigos, Itay and Muhlgay,
+                   Dor and Shashua, Amnon and Leyton-Brown, Kevin and Shoham,
+                   Yoav",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Retrieval-Augmented Language Modeling (RALM) methods, which
+                   condition a language model (LM) on relevant documents from a
+                   grounding corpus during generation, were shown to
+                   significantly improve language modeling performance. In
+                   addition, they can mitigate the problem of factually
+                   inaccurate text generation and provide natural source
+                   attribution mechanism. Existing RALM approaches focus on
+                   modifying the LM architecture in order to facilitate the
+                   incorporation of external information, significantly
+                   complicating deployment. This paper considers a simple
+                   alternative, which we dub In-Context RALM: leaving the LM
+                   architecture unchanged and prepending grounding documents to
+                   the input, without any further training of the LM. We show
+                   that In-Context RALM that builds on off-the-shelf general
+                   purpose retrievers provides surprisingly large LM gains
+                   across model sizes and diverse corpora. We also demonstrate
+                   that the document retrieval and ranking mechanism can be
+                   specialized to the RALM setting to further boost performance.
+                   We conclude that In-Context RALM has considerable potential
+                   to increase the prevalence of LM grounding, particularly in
+                   settings where a pretrained LM must be used without
+                   modification or even via API access.",
+  month         =  jan,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2302.00083"
+}
+
+@ARTICLE{Shi2023-jl,
+  title         = "In-Context Pretraining: Language modeling beyond document
+                   boundaries",
+  author        = "Shi, Weijia and Min, Sewon and Lomeli, Maria and Zhou,
+                   Chunting and Li, Margaret and Lin, Xi Victoria and Smith,
+                   Noah A and Zettlemoyer, Luke and Yih, Scott and Lewis, Mike",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large language models (LMs) are currently trained to predict
+                   tokens given document prefixes, enabling them to directly
+                   perform long-form generation and prompting-style tasks which
+                   can be reduced to document completion. Existing pretraining
+                   pipelines train LMs by concatenating random sets of short
+                   documents to create input contexts but the prior documents
+                   provide no signal for predicting the next document. We
+                   instead present In-Context Pretraining, a new approach where
+                   language models are pretrained on a sequence of related
+                   documents, thereby explicitly encouraging them to read and
+                   reason across document boundaries. We can do In-Context
+                   Pretraining by simply changing the document ordering so that
+                   each context contains related documents, and directly
+                   applying existing pretraining pipelines. However, this
+                   document sorting problem is challenging. There are billions
+                   of documents and we would like the sort to maximize
+                   contextual similarity for every document without repeating
+                   any data. To do this, we introduce approximate algorithms for
+                   finding related documents with efficient nearest neighbor
+                   search and constructing coherent input contexts with a graph
+                   traversal algorithm. Our experiments show In-Context
+                   Pretraining offers a simple and scalable approach to
+                   significantly enhance LMs'performance: we see notable
+                   improvements in tasks that require more complex contextual
+                   reasoning, including in-context learning (+8\%), reading
+                   comprehension (+15\%), faithfulness to previous contexts
+                   (+16\%), long-context reasoning (+5\%), and retrieval
+                   augmentation (+9\%).",
+  month         =  oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2310.10638"
+}
+
+@ARTICLE{Gu2023-ds,
+  title         = "Pre-training to learn in context",
+  author        = "Gu, Yuxian and Dong, Li and Wei, Furu and Huang, Minlie",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "In-context learning, where pre-trained language models learn
+                   to perform tasks from task examples and instructions in their
+                   contexts, has attracted much attention in the NLP community.
+                   However, the ability of in-context learning is not fully
+                   exploited because language models are not explicitly trained
+                   to learn in context. To this end, we propose PICL
+                   (Pre-training for In-Context Learning), a framework to
+                   enhance the language models' in-context learning ability by
+                   pre-training the model on a large collection of ``intrinsic
+                   tasks'' in the general plain-text corpus using the simple
+                   language modeling objective. PICL encourages the model to
+                   infer and perform tasks by conditioning on the contexts while
+                   maintaining task generalization of pre-trained models. We
+                   evaluate the in-context learning performance of the model
+                   trained with PICL on seven widely-used text classification
+                   datasets and the Super-NaturalInstrctions benchmark, which
+                   contains 100+ NLP tasks formulated to text generation. Our
+                   experiments show that PICL is more effective and
+                   task-generalizable than a range of baselines, outperforming
+                   larger language models with nearly 4x parameters. The code is
+                   publicly available at https://github.com/thu-coai/PICL.",
+  month         =  may,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2305.09137"
+}
+
+@ARTICLE{Liu2023-oq,
+  title         = "Lost in the middle: How language models use long contexts",
+  author        = "Liu, Nelson F and Lin, Kevin and Hewitt, John and Paranjape,
+                   Ashwin and Bevilacqua, Michele and Petroni, Fabio and Liang,
+                   Percy",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "While recent language models have the ability to take long
+                   contexts as input, relatively little is known about how well
+                   they use longer context. We analyze language model
+                   performance on two tasks that require identifying relevant
+                   information within their input contexts: multi-document
+                   question answering and key-value retrieval. We find that
+                   performance is often highest when relevant information occurs
+                   at the beginning or end of the input context, and
+                   significantly degrades when models must access relevant
+                   information in the middle of long contexts. Furthermore,
+                   performance substantially decreases as the input context
+                   grows longer, even for explicitly long-context models. Our
+                   analysis provides a better understanding of how language
+                   models use their input context and provides new evaluation
+                   protocols for future long-context models.",
+  month         =  jul,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2307.03172"
+}
+
+@ARTICLE{Borgeaud2021-uv,
+  title         = "Improving language models by retrieving from trillions of
+                   tokens",
+  author        = "Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan
+                   and Cai, Trevor and Rutherford, Eliza and Millican, Katie and
+                   van den Driessche, George and Lespiau, Jean-Baptiste and
+                   Damoc, Bogdan and Clark, Aidan and Casas, Diego de Las and
+                   Guy, Aurelia and Menick, Jacob and Ring, Roman and Hennigan,
+                   Tom and Huang, Saffron and Maggiore, Loren and Jones, Chris
+                   and Cassirer, Albin and Brock, Andy and Paganini, Michela and
+                   Irving, Geoffrey and Vinyals, Oriol and Osindero, Simon and
+                   Simonyan, Karen and Rae, Jack W and Elsen, Erich and Sifre,
+                   Laurent",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "We enhance auto-regressive language models by conditioning on
+                   document chunks retrieved from a large corpus, based on local
+                   similarity with preceding tokens. With a $2$ trillion token
+                   database, our Retrieval-Enhanced Transformer (RETRO) obtains
+                   comparable performance to GPT-3 and Jurassic-1 on the Pile,
+                   despite using 25$\times$ fewer parameters. After fine-tuning,
+                   RETRO performance translates to downstream
+                   knowledge-intensive tasks such as question answering. RETRO
+                   combines a frozen Bert retriever, a differentiable encoder
+                   and a chunked cross-attention mechanism to predict tokens
+                   based on an order of magnitude more data than what is
+                   typically consumed during training. We typically train RETRO
+                   from scratch, yet can also rapidly RETROfit pre-trained
+                   transformers with retrieval and still achieve good
+                   performance. Our work opens up new avenues for improving
+                   language models through explicit memory at unprecedented
+                   scale.",
+  month         =  dec,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2112.04426"
+}
+
+@ARTICLE{Sun2023-oo,
+  title     = "Instruction distillation makes Large Language Models efficient
+               zero-shot rankers",
+  author    = "Sun, Weiwei and Chen, Zheng and Ma, Xinyu and Yan, Lingyong and
+               Wang, Shuaiqiang and Ren, Pengjie and Chen, Zhumin and Yin, Dawei
+               and Ren, Zhaochun",
+  journal   = "arXiv.org",
+  publisher = "arXiv",
+  abstract  = "Recent studies have demonstrated the great potential of Large
+               Language Models (LLMs) serving as zero-shot relevance rankers.
+               The typical approach involves making comparisons between pairs or
+               lists of documents. Although effective, these listwise and
+               pairwise methods are not efficient and also heavily rely on
+               intricate prompt engineering. To tackle this problem, we
+               introduce a novel instruction distillation method. The key idea
+               is to distill the pairwise ranking ability of open-sourced LLMs
+               to a simpler but more efficient pointwise ranking. Specifically,
+               given the same LLM, we first rank documents using the effective
+               pairwise approach with complex instructions, and then distill the
+               teacher predictions to the pointwise approach with simpler
+               instructions. Evaluation results on the BEIR, TREC, and ReDial
+               datasets demonstrate that instruction distillation can improve
+               efficiency by 10 to 100x and also enhance the ranking performance
+               of LLMs. Furthermore, our approach surpasses the performance of
+               existing supervised methods like monoT5 and is on par with the
+               state-of-the-art zero-shot methods. The code to reproduce our
+               results is available at www.github.com/sunnweiwei/RankGPT.",
+  year      =  2023,
+  eprint    = "2311.01555",
+  doi       = "10.48550/ARXIV.2311.01555",
+  language  = "en"
+}
+
+@MISC{UnknownUnknown-fv,
+  title        = "Unicode Text Segmentation",
+  howpublished = "\url{https://unicode.org/reports/tr29/}",
+  note         = "Accessed: 2024-1-30"
+}
+
+@MISC{UnknownUnknown-ck,
+  title        = "Allow installing `provides\_extras` from local wheel file ·
+                  Issue \#9694 · pypa/pip",
+  booktitle    = "GitHub",
+  abstract     = "What's the problem this feature will solve? Would like pip
+                  install mypackage-0.1.0-py3-none-any.whl to be able to
+                  optionally install the provides\_extras metadata present
+                  within the wheel. Describe the solution you'd like Consider a
+                  packa...",
+  howpublished = "\url{https://github.com/pypa/pip/issues/9694}",
+  note         = "Accessed: 2023-11-26"
+}
+
+@ARTICLE{Corry2021-pv,
+  title   = "The problem of zombie datasets: A framework for deprecating
+             datasets",
+  author  = "Corry, Frances and Sridharan, H and Luccioni, A and Ananny, Mike
+             and Schultz, J and Crawford, Kate",
+  journal = "arXiv.org",
+  year    =  2021
+}
+
+@INCOLLECTION{Alby2022-xx,
+  title     = "Analyzing the web: Are top websites lists a good choice for
+               research?",
+  author    = "Alby, Tom and Jäschke, Robert",
+  booktitle = "Linking Theory and Practice of Digital Libraries",
+  publisher = "Springer International Publishing",
+  address   = "Cham",
+  pages     = "11--25",
+  series    = "Lecture notes in computer science",
+  year      =  2022,
+  doi       = "10.1007/978-3-031-16802-4\_2",
+  isbn      = "9783031168017,9783031168024",
+  issn      = "0302-9743,1611-3349"
+}
+
+@MISC{UnknownUnknown-no,
+  title       = "presidio: Context aware, pluggable and customizable data
+                 protection and de-identification {SDK} for text and images",
+  institution = "Github",
+  abstract    = "Context aware, pluggable and customizable data protection and
+                 de-identification SDK for text and images - GitHub -
+                 microsoft/presidio: Context aware, pluggable and customizable
+                 data protection and de-identification SDK for text and images",
+  language    = "en"
+}
+
+@INPROCEEDINGS{Broder2002-ra,
+  title     = "On the resemblance and containment of documents",
+  author    = "Broder, A Z",
+  booktitle = "Proceedings. Compression and Complexity of SEQUENCES 1997 (Cat.
+               No.97TB100171)",
+  publisher = "IEEE Comput. Soc",
+  pages     = "21--29",
+  abstract  = "Given two documents A and B we define two mathematical notions:
+               their resemblance r(A, B) and their containment c(A, B) that seem
+               to capture well the informal notions of ``roughly the same'' and
+               ``roughly contained.'' The basic idea is to reduce these issues
+               to set intersection problems that can be easily evaluated by a
+               process of random sampling that can be done independently for
+               each document. Furthermore, the resemblance can be evaluated
+               using a fixed size sample for each document. This paper discusses
+               the mathematical properties of these measures and the efficient
+               implementation of the sampling process using Rabin (1981)
+               fingerprints.",
+  year      =  2002,
+  doi       = "10.1109/sequen.1997.666900",
+  isbn      =  9780818681325
+}
+
+@MISC{PetersonUnknown-dv,
+  title       = "openwebtext: Open clone of {OpenAI}'s unreleased {WebText}
+                 dataset scraper. This version uses pushshift.io files instead
+                 of the {API} for speed",
+  author      = "Peterson, Joshua",
+  institution = "Github",
+  abstract    = "Open clone of OpenAI's unreleased WebText dataset scraper. This
+                 version uses pushshift.io files instead of the API for speed. -
+                 GitHub - jcpeterson/openwebtext: Open clone of OpenAI's
+                 unreleased WebText dataset scraper. This version uses
+                 pushshift.io files instead of the API for speed.",
+  language    = "en"
+}
+
+@ARTICLE{Radford2019-vq,
+  title    = "Language Models are Unsupervised Multitask Learners",
+  author   = "Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and
+              Amodei, Dario and Sutskever, Ilya",
+  abstract = "🏆 SOTA for Language Modelling on enwik8 (Bit per Character (BPC)
+              metric)",
+  month    =  feb,
+  year     =  2019
+}
+
+@MISC{Lucy1991-uf,
+  title   = "The Ernst \& Young approach to facilities management",
+  author  = "Lucy, J de and de Lucy, J",
+  journal = "Property Management",
+  volume  =  9,
+  number  =  1,
+  pages   = "24--31",
+  year    =  1991,
+  doi     = "10.1108/02637479110029793"
+}
+
+@ARTICLE{Ushio2022-kq,
+  title         = "Generative Language Models for Paragraph-Level Question
+                   Generation",
+  author        = "Ushio, Asahi and Alva-Manchego, Fernando and
+                   Camacho-Collados, Jose",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Powerful generative models have led to recent progress in
+                   question generation (QG). However, it is difficult to measure
+                   advances in QG research since there are no standardized
+                   resources that allow a uniform comparison among approaches.
+                   In this paper, we introduce QG-Bench, a multilingual and
+                   multidomain benchmark for QG that unifies existing question
+                   answering datasets by converting them to a standard QG
+                   setting. It includes general-purpose datasets such as SQuAD
+                   for English, datasets from ten domains and two styles, as
+                   well as datasets in eight different languages. Using QG-Bench
+                   as a reference, we perform an extensive analysis of the
+                   capabilities of language models for the task. First, we
+                   propose robust QG baselines based on fine-tuning generative
+                   language models. Then, we complement automatic evaluation
+                   based on standard metrics with an extensive manual
+                   evaluation, which in turn sheds light on the difficulty of
+                   evaluating QG models. Finally, we analyse both the domain
+                   adaptability of these models as well as the effectiveness of
+                   multilingual models in languages other than English. QG-Bench
+                   is released along with the fine-tuned models presented in the
+                   paper https://github.com/asahi417/lm-question-generation,
+                   which are also available as a demo https://autoqg.net/.",
+  month         =  oct,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2210.03992"
+}
+
+@ARTICLE{Krishna2023-do,
+  title         = "{USB}: A unified summarization benchmark across tasks and
+                   domains",
+  author        = "Krishna, Kundan and Gupta, Prakhar and Ramprasad, Sanjana and
+                   Wallace, Byron C and Bigham, Jeffrey P and Lipton, Zachary C",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "An abundance of datasets exist for training and evaluating
+                   models on the task of summary generation.However, these
+                   datasets are often derived heuristically, and lack sufficient
+                   annotations to support research into all aspects of
+                   summarization, such as evidence extraction and controllable
+                   summarization. We introduce a benchmark comprising 8 tasks
+                   that require multi-dimensional understanding of
+                   summarization, e.g., surfacing evidence for a summary,
+                   assessing its correctness, and gauging its relevance to
+                   different topics. We compare various methods on this
+                   benchmark and discover that on multiple tasks,
+                   moderately-sized fine-tuned models consistently outperform
+                   much larger few-shot prompted language models. For factuality
+                   related tasks, we also evaluate existing heuristics to create
+                   training data and find that training on them performs worse
+                   than training on $20\times$ less human-labeled data. Our
+                   benchmark consists of data from 6 different domains, allowing
+                   us to study cross-domain performance of trained models. We
+                   find that for some tasks, the amount of training data matters
+                   more than the domain where it comes from, while for other
+                   tasks training specifically on data from the target domain,
+                   even if limited, is more beneficial. Our work fulfills the
+                   need for a well-annotated summarization benchmark with
+                   diverse tasks, and provides useful insights about the impact
+                   of the quality, size and domain of training data.",
+  month         =  may,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2305.14296"
+}
+
+@MISC{McCoy2023-iz,
+  title        = "When language models produce text, is the text novel or copied
+                  from the training set?For answers, come to our poster today at
+                  \#acl2023nlp! Session 1 posters, 11:00 - 12:30 {todayCritics*}
+                  are calling the work ``monumental''Link to paper:
+                  https://t.co/{s6kDlGA3IH1}/2 pic.twitter.com/{qw1cKUMZvk}",
+  author       = "McCoy, Tom",
+  booktitle    = "Twitter",
+  month        =  jul,
+  year         =  2023,
+  howpublished = "\url{https://twitter.com/rtommccoy/status/1678378978925506562?s=12\&t=jr8t7woBh6WnXaXmdrUbIw}",
+  note         = "Accessed: 2023-7-11",
+  language     = "en"
+}
+
+@MISC{QueerUnknown-fk,
+  title        = "Queer In {AI}: A Case Study in Community-Led Participatory
+                  {AI}",
+  author       = "Queer, Organizers Of Queerinai and Anaelia Ovalle Queer In AI,
+                  U S A and Queer, Arjun Subramonian and Queer, Ashwin Singh and
+                  Queer, Claas Voelcker and Sutherland Queer, Danica J and
+                  Queer, Davide Locatelli and Queer, Eva Breznik and Queer,
+                  Filip Klubicka and Queer, Hang Yuan and Queer, Hetvi J",
+  howpublished = "\url{https://dl.acm.org/doi/10.1145/3593013.3594134}",
+  note         = "Accessed: 2024-2-5",
+  doi          = "10.1145/3593013.3594134",
+  language     = "en"
+}
+
+@INPROCEEDINGS{Kamalloo2023-qj,
+  title     = "Limitations of open-domain question answering benchmarks for
+               document-level reasoning",
+  author    = "Kamalloo, Ehsan and Clarke, Charles L A and Rafiei, Davood",
+  booktitle = "Proceedings of the 46th International ACM SIGIR Conference on
+               Research and Development in Information Retrieval",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  month     =  jul,
+  year      =  2023,
+  doi       = "10.1145/3539618.3592011"
 }
 
 @ARTICLE{Zhan2021-mp,
@@ -1138,57 +2410,6 @@
   year      =  2009
 }
 
-@ARTICLE{Nie2015-of,
-  title    = "Disease Inference from Health-Related Questions via Sparse Deep
-              Learning",
-  author   = "Nie, L and Wang, M and Zhang, L and Yan, S and Zhang, B and Chua,
-              T",
-  journal  = "IEEE transactions on knowledge and data engineering",
-  volume   =  27,
-  number   =  8,
-  pages    = "2107--2119",
-  abstract = "Automatic disease inference is of importance to bridge the gap
-              between what online health seekers with unusual symptoms need and
-              what busy human doctors with biased expertise can offer. However,
-              accurately and efficiently inferring diseases is non-trivial,
-              especially for community-based health services due to the
-              vocabulary gap, incomplete information, correlated medical
-              concepts, and limited high quality training samples. In this
-              paper, we first report a user study on the information needs of
-              health seekers in terms of questions and then select those that
-              ask for possible diseases of their manifested symptoms for further
-              analytic. We next propose a novel deep learning scheme to infer
-              the possible diseases given the questions of health seekers. The
-              proposed scheme is comprised of two key components. The first
-              globally mines the discriminant medical signatures from raw
-              features. The second deems the raw features and their signatures
-              as input nodes in one layer and hidden nodes in the subsequent
-              layer, respectively. Meanwhile, it learns the inter-relations
-              between these two layers via pre-training with pseudo-labeled
-              data. Following that, the hidden nodes serve as raw features for
-              the more abstract signature mining. With incremental and
-              alternative repeating of these two components, our scheme builds a
-              sparsely connected deep architecture with three hidden layers.
-              Overall, it well fits specific tasks with fine-tuning. Extensive
-              experiments on a real-world dataset labeled by online doctors show
-              the significant performance gains of our scheme.",
-  month    =  aug,
-  year     =  2015,
-  keywords = "data mining;diseases;health care;inference mechanisms;information
-              needs;learning (artificial intelligence);medical information
-              systems;pseudolabeled data;abstract signature mining;sparsely
-              connected deep architecture;discriminant medical
-              signatures;information needs;community-based health
-              services;online health seekers;automatic disease inference;sparse
-              deep learning;health-related questions;Diseases;Medical diagnostic
-              imaging;Cancer;Educational institutions;Training;Community-based
-              Health Services;Question Answering;Disease Inference;Deep
-              Learning;Community-based health services;question
-              answering;disease inference;deep learning",
-  doi      = "10.1109/TKDE.2015.2399298",
-  issn     = "1041-4347"
-}
-
 @INCOLLECTION{Soldaini2015-hs,
   title     = "Retrieving Medical Literature for Clinical Decision Support",
   author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
@@ -1219,58 +2440,12 @@
   year      =  2014
 }
 
-@INPROCEEDINGS{Soldaini2015-sm,
-  title     = "Retrieving medical literature for clinical decision support",
-  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
-               Nazli and Frieder, Ophir",
-  booktitle = "European Conference on Information Retrieval (ECIR)",
-  publisher = "Springer",
-  pages     = "538–549",
-  year      =  2015
-}
-
 @INPROCEEDINGS{Soldaini2014-tr,
   title     = "Query reformulation for clinical decision support search",
   author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
                Nazli and Frieder, Ophir",
   booktitle = "23rd Text REtrieval Conference (TREC)",
   year      =  2014
-}
-
-@ARTICLE{Frenay2014-fj,
-  title    = "Classification in the presence of label noise: a survey",
-  author   = "Frénay, Benoît and Verleysen, Michel",
-  journal  = "IEEE transactions on neural networks and learning systems",
-  volume   =  25,
-  number   =  5,
-  pages    = "845--869",
-  abstract = "Label noise is an important issue in classification, with many
-              potential negative consequences. For example, the accuracy of
-              predictions may decrease, whereas the complexity of inferred
-              models and the number of necessary training samples may increase.
-              Many works in the literature have been devoted to the study of
-              label noise and the development of techniques to deal with label
-              noise. However, the field lacks a comprehensive survey on the
-              different types of label noise, their consequences and the
-              algorithms that consider label noise. This paper proposes to fill
-              this gap. First, the definitions and sources of label noise are
-              considered and a taxonomy of the types of label noise is proposed.
-              Second, the potential consequences of label noise are discussed.
-              Third, label noise-robust, label noise cleansing, and label
-              noise-tolerant algorithms are reviewed. For each category of
-              approaches, a short discussion is proposed to help the
-              practitioner to choose the most suitable technique in its own
-              particular field of application. Eventually, the design of
-              experiments is also discussed, what may interest the researchers
-              who would like to test their own algorithms. In this paper, label
-              noise consists of mislabeled instances: no additional information
-              is assumed to be available like e.g., confidences on labels.",
-  month    =  may,
-  year     =  2014,
-  doi      = "10.1109/TNNLS.2013.2292894",
-  pmid     =  24808033,
-  issn     = "2162-2388,2162-237X",
-  language = "en"
 }
 
 @INPROCEEDINGS{Druck2008-yv,
@@ -1336,15 +2511,6 @@
   number  = "1-2",
   pages   = "113–148",
   year    =  2016
-}
-
-@INPROCEEDINGS{Divita2014-sm,
-  title     = "Sophia: a expedient {UMLS} concept extraction annotator",
-  author    = "Divita, Guy and Zeng, Qing T and Gundlapalli, Adi V and Duvall,
-               Scott and Nebeker, Jonathan and Samore, Matthew H",
-  booktitle = "AMIA Annual Symposium Proceedings",
-  volume    =  2014,
-  year      =  2014
 }
 
 @INPROCEEDINGS{Severyn2015-ty,
@@ -1450,31 +2616,6 @@
   year      =  2010
 }
 
-@INPROCEEDINGS{Pennington2014-dp,
-  title     = "Glove: Global vectors for word representation",
-  author    = "Pennington, Jeffrey and Socher, Richard and Manning, Christopher",
-  booktitle = "Proceedings of the 2014 conference on empirical methods in
-               natural language processing (EMNLP)",
-  pages     = "1532--1543",
-  year      =  2014
-}
-
-@INPROCEEDINGS{Roberts2017-kf,
-  title     = "Overview of the {TREC} 2016 Clinical Decision Support Track",
-  author    = "Roberts, Kirk and Demner-Fushman, Dina and Voorhees, Ellen M and
-               Hersh, William R",
-  booktitle = "TREC",
-  year      =  2017
-}
-
-@INPROCEEDINGS{Soldaini2015-lg,
-  title     = "Retrieving medical literature for clinical decision support",
-  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
-               Nazli and Frieder, Ophir",
-  booktitle = "ECIR",
-  year      =  2015
-}
-
 @TECHREPORT{Soldaini2014-jz,
   title       = "Query reformulation for clinical decision support search",
   author      = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
@@ -1491,13 +2632,6 @@
                Computational Biology, and Health Informatics",
   publisher = "ACM",
   pages     = "651–652",
-  year      =  2014
-}
-
-@INPROCEEDINGS{Cohan2014-jv,
-  title     = "Towards citation-based summarization of biomedical literature",
-  author    = "Cohan, Arman and Soldaini, Luca and Goharian, Nazli",
-  booktitle = "Proceedings of the Text Analysis Conference (TAC'14)",
   year      =  2014
 }
 
@@ -1826,37 +2960,6 @@
   year      =  2016
 }
 
-@ARTICLE{Sennrich2015-qp,
-  title         = "Neural Machine Translation of Rare Words with Subword Units",
-  author        = "Sennrich, Rico and Haddow, Barry and Birch, Alexandra",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Neural machine translation (NMT) models typically operate
-                   with a fixed vocabulary, but translation is an
-                   open-vocabulary problem. Previous work addresses the
-                   translation of out-of-vocabulary words by backing off to a
-                   dictionary. In this paper, we introduce a simpler and more
-                   effective approach, making the NMT model capable of
-                   open-vocabulary translation by encoding rare and unknown
-                   words as sequences of subword units. This is based on the
-                   intuition that various word classes are translatable via
-                   smaller units than words, for instance names (via character
-                   copying or transliteration), compounds (via compositional
-                   translation), and cognates and loanwords (via phonological
-                   and morphological transformations). We discuss the
-                   suitability of different word segmentation techniques,
-                   including simple character n-gram models and a segmentation
-                   based on the byte pair encoding compression algorithm, and
-                   empirically show that subword models improve over a back-off
-                   dictionary baseline for the WMT 15 translation tasks
-                   English-German and English-Russian by 1.1 and 1.3 BLEU,
-                   respectively.",
-  month         =  aug,
-  year          =  2015,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "1508.07909"
-}
-
 @INPROCEEDINGS{Ghosh2016-pa,
   title     = "Characterizing Diseases from Unstructured Text: A Vocabulary
                Driven {Word2Vec} Approach",
@@ -2028,32 +3131,6 @@
   language = "en"
 }
 
-@ARTICLE{Tai2015-yt,
-  title         = "Improved Semantic Representations From Tree-Structured Long
-                   Short-Term Memory Networks",
-  author        = "Tai, Kai Sheng and Socher, Richard and Manning, Christopher D",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Because of their superior ability to preserve sequence
-                   information over time, Long Short-Term Memory (LSTM)
-                   networks, a type of recurrent neural network with a more
-                   complex computational unit, have obtained strong results on a
-                   variety of sequence modeling tasks. The only underlying LSTM
-                   structure that has been explored so far is a linear chain.
-                   However, natural language exhibits syntactic properties that
-                   would naturally combine words to phrases. We introduce the
-                   Tree-LSTM, a generalization of LSTMs to tree-structured
-                   network topologies. Tree-LSTMs outperform all existing
-                   systems and strong LSTM baselines on two tasks: predicting
-                   the semantic relatedness of two sentences (SemEval 2014, Task
-                   1) and sentiment classification (Stanford Sentiment
-                   Treebank).",
-  month         =  feb,
-  year          =  2015,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "1503.00075"
-}
-
 @INPROCEEDINGS{Burl1994-ce,
   title     = "Automated analysis of radar imagery of Venus: handling lack of
                ground truth",
@@ -2135,20 +3212,6 @@
   year      =  2016
 }
 
-@INPROCEEDINGS{Guo2017-zy,
-  title     = "On Calibration of Modern Neural Networks",
-  author    = "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q",
-  booktitle = "International Conference on Machine Learning",
-  pages     = "1321--1330",
-  abstract  = "Confidence calibration – the problem of predicting probability
-               estimates representative of the true correctness likelihood – is
-               important for classification models in many applications. We
-               discover...",
-  month     =  jul,
-  year      =  2017,
-  language  = "en"
-}
-
 @ARTICLE{Lipton2018-mi,
   title    = "Detecting and Correcting for Label Shift with Black Box Predictors",
   author   = "Lipton, Zachary C and Wang, Yu-Xiang and Smola, Alex",
@@ -2173,32 +3236,6 @@
   year     =  2018
 }
 
-@ARTICLE{Luong2015-np,
-  title    = "Effective Approaches to Attention-based Neural Machine Translation",
-  author   = "Luong, Minh-Thang and Pham, Hieu and Manning, Christopher D",
-  journal  = "arXiv:1508.04025 [cs]",
-  abstract = "An attentional mechanism has lately been used to improve neural
-              machine translation (NMT) by selectively focusing on parts of the
-              source sentence during translation. However, there has been little
-              work exploring useful architectures for attention-based NMT. This
-              paper examines two simple and effective classes of attentional
-              mechanism: a global approach which always attends to all source
-              words and a local one that only looks at a subset of source words
-              at a time. We demonstrate the effectiveness of both approaches
-              over the WMT translation tasks between English and German in both
-              directions. With local attention, we achieve a significant gain of
-              5.0 BLEU points over non-attentional systems which already
-              incorporate known techniques such as dropout. Our ensemble model
-              using different attention architectures has established a new
-              state-of-the-art result in the WMT'15 English to German
-              translation task with 25.9 BLEU points, an improvement of 1.0 BLEU
-              points over the existing best system backed by NMT and an n-gram
-              reranker.",
-  month    =  aug,
-  year     =  2015,
-  language = "en"
-}
-
 @ARTICLE{Duchi2011-on,
   title   = "Adaptive Subgradient Methods for Online Learning and Stochastic
              Optimization",
@@ -2209,34 +3246,6 @@
   month   =  jul,
   year    =  2011,
   issn    = "1532-4435"
-}
-
-@ARTICLE{Vaswani2017-ue,
-  title    = "Attention Is All You Need",
-  author   = "Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit,
-              Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Lukasz and
-              Polosukhin, Illia",
-  journal  = "arXiv:1706.03762 [cs]",
-  abstract = "The dominant sequence transduction models are based on complex
-              recurrent or convolutional neural networks in an encoder-decoder
-              configuration. The best performing models also connect the encoder
-              and decoder through an attention mechanism. We propose a new
-              simple network architecture, the Transformer, based solely on
-              attention mechanisms, dispensing with recurrence and convolutions
-              entirely. Experiments on two machine translation tasks show these
-              models to be superior in quality while being more parallelizable
-              and requiring significantly less time to train. Our model achieves
-              28.4 BLEU on the WMT 2014 English-to-German translation task,
-              improving over the existing best results, including ensembles by
-              over 2 BLEU. On the WMT 2014 English-to-French translation task,
-              our model establishes a new single-model state-of-the-art BLEU
-              score of 41.8 after training for 3.5 days on eight GPUs, a small
-              fraction of the training costs of the best models from the
-              literature. We show that the Transformer generalizes well to other
-              tasks by applying it successfully to English constituency parsing
-              both with large and limited training data.",
-  month    =  jun,
-  year     =  2017
 }
 
 @INPROCEEDINGS{Ai2018-zh,
@@ -2275,30 +3284,6 @@
   language  = "en"
 }
 
-@INPROCEEDINGS{Kim2018-bu,
-  title     = "Joint Learning of Domain Classification and Out-of-Domain
-               Detection with Dynamic Class Weighting for Satisficing False
-               Acceptance Rates",
-  author    = "Kim, Joo-Kyung and Kim, Young-Bum",
-  booktitle = "arXiv:1807.00072 [cs]",
-  abstract  = "In domain classification for spoken dialog systems, correct
-               detection of out-of-domain (OOD) utterances is crucial because it
-               reduces confusion and unnecessary interaction costs between users
-               and the systems. Previous work usually utilizes OOD detectors
-               that are trained separately from in-domain (IND) classifiers, and
-               confidence thresholding for OOD detection given target evaluation
-               scores. In this paper, we introduce a neural joint learning model
-               for domain classification and OOD detection, where dynamic class
-               weighting is used during the model training to satisfice a given
-               OOD false acceptance rate (FAR) while maximizing the domain
-               classification accuracy. Evaluating on two domain classification
-               tasks for the utterances from a large spoken dialogue system, we
-               show that our approach significantly improves the domain
-               classification performance with satisficing given target FARs.",
-  month     =  jun,
-  year      =  2018
-}
-
 @INPROCEEDINGS{Jagerman2017-ot,
   title     = "Modeling Label Ambiguity for Neural List-Wise Learning to Rank",
   author    = "Jagerman, Rolf and Kiseleva, Julia and de Rijke, Maarten",
@@ -2319,35 +3304,6 @@
   month     =  aug,
   year      =  2017,
   language  = "en"
-}
-
-@ARTICLE{Bahdanau2014-en,
-  title    = "Neural Machine Translation by Jointly Learning to Align and
-              Translate",
-  author   = "Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua",
-  journal  = "arXiv:1409.0473 [cs, stat]",
-  abstract = "Neural machine translation is a recently proposed approach to
-              machine translation. Unlike the traditional statistical machine
-              translation, the neural machine translation aims at building a
-              single neural network that can be jointly tuned to maximize the
-              translation performance. The models proposed recently for neural
-              machine translation often belong to a family of encoder–decoders
-              and encode a source sentence into a ﬁxed-length vector from which
-              a decoder generates a translation. In this paper, we conjecture
-              that the use of a ﬁxed-length vector is a bottleneck in improving
-              the performance of this basic encoder–decoder architecture, and
-              propose to extend this by allowing a model to automatically
-              (soft-)search for parts of a source sentence that are relevant to
-              predicting a target word, without having to form these parts as a
-              hard segment explicitly. With this new approach, we achieve a
-              translation performance comparable to the existing
-              state-of-the-art phrase-based system on the task of
-              English-to-French translation. Furthermore, qualitative analysis
-              reveals that the (soft-)alignments found by the model agree well
-              with our intuition.",
-  month    =  sep,
-  year     =  2014,
-  language = "en"
 }
 
 @INPROCEEDINGS{Jiang2018-fw,
@@ -2392,108 +3348,6 @@
                accuracy in a setting with thousands of overlapping domains.",
   year      =  2018,
   language  = "en"
-}
-
-@INPROCEEDINGS{Kim2018-bm,
-  title     = "A Scalable Neural Shortlisting-Reranking Approach for Large-Scale
-               Domain Classification in Natural Language Understanding",
-  author    = "Kim, Young-Bum and Kim, Dongchan and Kim, Joo-Kyung and Sarikaya,
-               Ruhi",
-  booktitle = "Proceedings of the 2018 Conference of the North American Chapter
-               of the Association for Computational Linguistics: Human Language
-               Technologies, Volume 3 (Industry Papers)",
-  volume    =  3,
-  pages     = "16--24",
-  year      =  2018,
-  doi       = "10.18653/v1/N18-3003",
-  language  = "en"
-}
-
-@ARTICLE{Artetxe2017-ju,
-  title    = "Unsupervised Neural Machine Translation",
-  author   = "Artetxe, Mikel and Labaka, Gorka and Agirre, Eneko and Cho,
-              Kyunghyun",
-  journal  = "arXiv:1710.11041 [cs]",
-  abstract = "In spite of the recent success of neural machine translation (NMT)
-              in standard benchmarks, the lack of large parallel corpora poses a
-              major practical problem for many language pairs. There have been
-              several proposals to alleviate this issue with, for instance,
-              triangulation and semi-supervised learning techniques, but they
-              still require a strong cross-lingual signal. In this work, we
-              completely remove the need of parallel data and propose a novel
-              method to train an NMT system in a completely unsupervised manner,
-              relying on nothing but monolingual corpora. Our model builds upon
-              the recent work on unsupervised embedding mappings, and consists
-              of a slightly modified attentional encoder-decoder model that can
-              be trained on monolingual corpora alone using a combination of
-              denoising and backtranslation. Despite the simplicity of the
-              approach, our system obtains 15.56 and 10.21 BLEU points in WMT
-              2014 French-to-English and German-to-English translation. The
-              model can also profit from small parallel corpora, and attains
-              21.81 and 15.24 points when combined with 100,000 parallel
-              sentences, respectively. Our implementation is released as an open
-              source project.",
-  month    =  oct,
-  year     =  2017
-}
-
-@ARTICLE{Niculae2017-zy,
-  title    = "A Regularized Framework for Sparse and Structured Neural Attention",
-  author   = "Niculae, Vlad and Blondel, Mathieu",
-  journal  = "arXiv:1705.07704 [cs, stat]",
-  abstract = "Modern neural networks are often augmented with an attention
-              mechanism, which tells the network where to focus within the
-              input. We propose in this paper a new framework for sparse and
-              structured attention, building upon a smoothed max operator. We
-              show that the gradient of this operator defines a mapping from
-              real values to probabilities, suitable as an attention mechanism.
-              Our framework includes softmax and a slight generalization of the
-              recently-proposed sparsemax as special cases. However, we also
-              show how our framework can incorporate modern structured
-              penalties, resulting in more interpretable attention mechanisms,
-              that focus on entire segments or groups of an input. We derive
-              efficient algorithms to compute the forward and backward passes of
-              our attention mechanisms, enabling their use in a neural network
-              trained with backpropagation. To showcase their potential as a
-              drop-in replacement for existing ones, we evaluate our attention
-              mechanisms on three large-scale tasks: textual entailment, machine
-              translation, and sentence summarization. Our attention mechanisms
-              improve interpretability without sacrificing performance; notably,
-              on textual entailment and summarization, we outperform the
-              standard attention mechanisms based on softmax and sparsemax.",
-  month    =  may,
-  year     =  2017
-}
-
-@ARTICLE{Wu2018-fb,
-  title    = "Group Normalization",
-  author   = "Wu, Yuxin and He, Kaiming",
-  journal  = "arXiv:1803.08494 [cs]",
-  abstract = "Batch Normalization (BN) is a milestone technique in the
-              development of deep learning, enabling various networks to train.
-              However, normalizing along the batch dimension introduces problems
-              --- BN's error increases rapidly when the batch size becomes
-              smaller, caused by inaccurate batch statistics estimation. This
-              limits BN's usage for training larger models and transferring
-              features to computer vision tasks including detection,
-              segmentation, and video, which require small batches constrained
-              by memory consumption. In this paper, we present Group
-              Normalization (GN) as a simple alternative to BN. GN divides the
-              channels into groups and computes within each group the mean and
-              variance for normalization. GN's computation is independent of
-              batch sizes, and its accuracy is stable in a wide range of batch
-              sizes. On ResNet-50 trained in ImageNet, GN has 10.6\% lower error
-              than its BN counterpart when using a batch size of 2; when using
-              typical batch sizes, GN is comparably good with BN and outperforms
-              other normalization variants. Moreover, GN can be naturally
-              transferred from pre-training to fine-tuning. GN can outperform
-              its BN-based counterparts for object detection and segmentation in
-              COCO, and for video classification in Kinetics, showing that GN
-              can effectively replace the powerful BN in a variety of tasks. GN
-              can be easily implemented by a few lines of code in modern
-              libraries.",
-  month    =  mar,
-  year     =  2018
 }
 
 @INPROCEEDINGS{Resnik2015-mo,
@@ -2544,27 +3398,6 @@
   year      =  2017,
   doi       = "10.18653/v1/P17-1131",
   language  = "en"
-}
-
-@ARTICLE{Conneau2018-hl,
-  title    = "What you can cram into a single vector: Probing sentence
-              embeddings for linguistic properties",
-  author   = "Conneau, Alexis and Kruszewski, German and Lample, Guillaume and
-              Barrault, Loïc and Baroni, Marco",
-  journal  = "arXiv:1805.01070 [cs]",
-  abstract = "Although much effort has recently been devoted to training
-              high-quality sentence embeddings, we still have a poor
-              understanding of what they are capturing. ``Downstream'' tasks,
-              often based on sentence classification, are commonly used to
-              evaluate the quality of sentence representations. The complexity
-              of the tasks makes it however difficult to infer what kind of
-              information is present in the representations. We introduce here
-              10 probing tasks designed to capture simple linguistic features of
-              sentences, and we use them to study embeddings generated by three
-              different encoders trained in eight distinct ways, uncovering
-              intriguing properties of both encoders and training methods.",
-  month    =  may,
-  year     =  2018
 }
 
 @INPROCEEDINGS{Kumar2015-kp,
@@ -2663,38 +3496,6 @@
   language  = "en"
 }
 
-@ARTICLE{Choudhury2017-vb,
-  title    = "The Language of Social Support in Social Media and its Effect on
-              Suicidal Ideation Risk",
-  author   = "Choudhury, Munmun De and Kiciman, Emre",
-  journal  = "Microsoft Research",
-  abstract = "Online social support is known to play a signiﬁcant role in mental
-              well-being. However, current research is limited in its ability to
-              quantify this link. Challenges exist due to the paucity of
-              longitudinal, pre- and post-mental illness risk data, and reliable
-              methods that can examine causality between past availability of
-              support and future risk. In …",
-  month    =  mar,
-  year     =  2017,
-  language = "en-US"
-}
-
-@ARTICLE{Choudhury2013-rp,
-  title    = "Predicting Depression via Social Media",
-  author   = "Choudhury, Munmun De and Gamon, Michael and Counts, Scott and
-              Horvitz, Eric",
-  journal  = "Microsoft Research",
-  abstract = "Major depression constitutes a serious challenge in personal and
-              public health. Tens of millions of people each year suffer from
-              depression and only a fraction receives adequate treatment. We
-              explore the potential to use social media to detect and diagnose
-              major depressive disorder in individuals. We first employ
-              crowdsourcing to compile a set of Twitter …",
-  month    =  jul,
-  year     =  2013,
-  language = "en-US"
-}
-
 @INPROCEEDINGS{Coppersmith2016-lf,
   title     = "Exploratory Analysis of Social Media Prior to a Suicide Attempt",
   author    = "Coppersmith, Glen and Ngo, Kim and Leary, Ryan and Wood, Anthony",
@@ -2741,29 +3542,6 @@
                baselines on this general forum dataset.",
   month     =  sep,
   year      =  2017
-}
-
-@INPROCEEDINGS{Coppersmith2017-wf,
-  title     = "Scalable mental health analysis in the clinical whitespace via
-               natural language processing",
-  author    = "Coppersmith, G and Hilland, C and Frieder, O and Leary, R",
-  booktitle = "2017 IEEE EMBS International Conference on Biomedical Health
-               Informatics (BHI)",
-  pages     = "393--396",
-  abstract  = "Our increasingly digital life provides a wealth of data about our
-               behavior, beliefs, mood, and well-being. This data provides some
-               insight into the lives of patients outside the healthcare
-               setting, and in aggregate can be insightful for the person's
-               mental health and emotional crisis. Here, we introduce this
-               community to some of the recent advancement in using natural
-               language processing and machine learning to provide insight into
-               mental health of both individuals and populations. We advocate
-               using these linguistic signals as a supplement to those that are
-               collected in the health care system, filling in some of the
-               so-called “whitespace” between visits.",
-  month     =  feb,
-  year      =  2017,
-  doi       = "10.1109/BHI.2017.7897288"
 }
 
 @ARTICLE{Cohan2017-xc,
@@ -2838,47 +3616,6 @@
                leaves much room for improvement.",
   year      =  2014,
   language  = "en"
-}
-
-@INPROCEEDINGS{Soldaini2015-va,
-  title     = "Retrieving Medical Literature for Clinical Decision Support",
-  author    = "Soldaini, Luca and Cohan, Arman and Yates, Andrew and Goharian,
-               Nazli and Frieder, Ophir",
-  booktitle = "Advances in Information Retrieval",
-  publisher = "Springer, Cham",
-  pages     = "538--549",
-  abstract  = "Keeping current given the vast volume of medical literature
-               published yearly poses a serious challenge for medical
-               professionals. Thus, interest in systems that aid physicians in
-               making clinical decisions is intensifying. A task of Clinical
-               Decision Support (CDS) systems is retrieving highly relevant
-               medical literature that could help healthcare professionals in
-               formulating diagnoses or determining treatments. This search task
-               is atypical as the queries are medical case reports, which
-               differs in terms of size and structure from queries in other,
-               more common search tasks. We apply query reformulation techniques
-               to address literature search based on case reports. The proposed
-               system achieves a statistically significant improvement over the
-               baseline (29\% – 32\%) and the state-of-the-art (12\% – 59\%).",
-  series    = "Lecture Notes in Computer Science",
-  month     =  mar,
-  year      =  2015,
-  doi       = "10.1007/978-3-319-16354-3\_59",
-  isbn      = "9783319163536,9783319163543",
-  language  = "en"
-}
-
-@INPROCEEDINGS{Cohan2015-cb,
-  title     = "Matching Citation Text and Cited Spans in Biomedical Literature:
-               a Search-Oriented Approach",
-  author    = "Cohan, Arman and Soldaini, Luca and Goharian, Nazli",
-  booktitle = "Proceedings of the 2015 Conference of the North American Chapter
-               of the Association for Computational Linguistics: Human Language
-               Technologies",
-  publisher = "Association for Computational Linguistics",
-  address   = "Denver, Colorado",
-  pages     = "1042–1048",
-  year      =  2015
 }
 
 @ARTICLE{Soldaini2016-dl,
@@ -3037,49 +3774,6 @@
   doi       = "10.1145/3132847.3133149",
   isbn      =  9781450349185,
   language  = "en"
-}
-
-@ARTICLE{Su2018-sc,
-  title         = "A Re-ranker Scheme for Integrating Large Scale {NLU} models",
-  author        = "Su, Chengwei and Gupta, Rahul and Ananthakrishnan, Shankar
-                   and Matsoukas, Spyros",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Large scale Natural Language Understanding (NLU) systems are
-                   typically trained on large quantities of data, requiring a
-                   fast and scalable training strategy. A typical design for NLU
-                   systems consists of domain-level NLU modules (domain
-                   classifier, intent classifier and named entity recognizer).
-                   Hypotheses (NLU interpretations consisting of various
-                   intent+slot combinations) from these domain specific modules
-                   are typically aggregated with another downstream component.
-                   The re-ranker integrates outputs from domain-level
-                   recognizers, returning a scored list of cross domain
-                   hypotheses. An ideal re-ranker will exhibit the following two
-                   properties: (a) it should prefer the most relevant hypothesis
-                   for the given input as the top hypothesis and, (b) the
-                   interpretation scores corresponding to each hypothesis
-                   produced by the re-ranker should be calibrated. Calibration
-                   allows the final NLU interpretation score to be comparable
-                   across domains. We propose a novel re-ranker strategy that
-                   addresses these aspects, while also maintaining domain
-                   specific modularity. We design optimization loss functions
-                   for such a modularized re-ranker and present results on
-                   decreasing the top hypothesis error rate as well as
-                   maintaining the model calibration. We also experiment with an
-                   extension involving training the domain specific re-rankers
-                   on datasets curated independently by each domain to allow
-                   further asynchronization. \%The proposed re-ranker design
-                   showcases the following: (i) improved NLU performance over an
-                   unweighted aggregation strategy, (ii) cross-domain calibrated
-                   performance and, (iii) support for use cases involving
-                   training each re-ranker on datasets curated by each domain
-                   independently.",
-  month         =  sep,
-  year          =  2018,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "1809.09605",
-  language      = "en"
 }
 
 @INPROCEEDINGS{Wang2018-fw,
@@ -3760,38 +4454,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "1402.1454"
-}
-
-@ARTICLE{Conneau2017-fb,
-  title         = "Word Translation Without Parallel Data",
-  author        = "Conneau, Alexis and Lample, Guillaume and Ranzato,
-                   Marc'aurelio and Denoyer, Ludovic and Jégou, Hervé",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "State-of-the-art methods for learning cross-lingual word
-                   embeddings have relied on bilingual dictionaries or parallel
-                   corpora. Recent studies showed that the need for parallel
-                   data supervision can be alleviated with character-level
-                   information. While these methods showed encouraging results,
-                   they are not on par with their supervised counterparts and
-                   are limited to pairs of languages sharing a common alphabet.
-                   In this work, we show that we can build a bilingual
-                   dictionary between two languages without using any parallel
-                   corpora, by aligning monolingual word embedding spaces in an
-                   unsupervised way. Without using any character information,
-                   our model even outperforms existing supervised methods on
-                   cross-lingual tasks for some language pairs. Our experiments
-                   demonstrate that our method works very well also for distant
-                   language pairs, like English-Russian or English-Chinese. We
-                   finally describe experiments on the English-Esperanto
-                   low-resource language pair, on which there only exists a
-                   limited amount of parallel data, to show the potential impact
-                   of our method in fully unsupervised machine translation. Our
-                   code, embeddings and dictionaries are publicly available.",
-  month         =  oct,
-  year          =  2017,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "1710.04087"
 }
 
 @ARTICLE{Gomaa2013-lr,
@@ -5372,23 +6034,6 @@
   eprint        = "2004.07453"
 }
 
-@INPROCEEDINGS{Metzler2005-ql,
-  title     = "A Markov random field model for term dependencies",
-  author    = "Metzler, Donald and Croft, W Bruce",
-  booktitle = "Proceedings of the 28th annual international ACM SIGIR conference
-               on Research and development in information retrieval",
-  publisher = "Association for Computing Machinery",
-  address   = "New York, NY, USA",
-  pages     = "472--479",
-  series    = "SIGIR '05",
-  month     =  aug,
-  year      =  2005,
-  keywords  = "term dependence, phrases, information retrieval, Markov random
-               fields",
-  doi       = "10.1145/1076034.1076115",
-  isbn      =  9781595930347
-}
-
 @INPROCEEDINGS{Smucker2007-aa,
   title     = "A comparison of statistical significance tests for information
                retrieval evaluation",
@@ -5663,49 +6308,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2011.04883"
-}
-
-@INPROCEEDINGS{Duh2008-lm,
-  title     = "Learning to Rank with Partially-labeled Data",
-  author    = "Duh, Kevin and Kirchhoff, Katrin",
-  booktitle = "Proceedings of the 31st Annual International ACM SIGIR Conference
-               on Research and Development in Information Retrieval",
-  publisher = "ACM",
-  address   = "New York, NY, USA",
-  pages     = "251--258",
-  series    = "SIGIR '08",
-  year      =  2008,
-  keywords  = "boosting, information retrieval, kernel principal components
-               analysis, learning to rank, transductive learning",
-  doi       = "10.1145/1390334.1390379",
-  isbn      =  9781605581644
-}
-
-@ARTICLE{Peters2018-be,
-  title         = "Deep contextualized word representations",
-  author        = "Peters, Matthew E and Neumann, Mark and Iyyer, Mohit and
-                   Gardner, Matt and Clark, Christopher and Lee, Kenton and
-                   Zettlemoyer, Luke",
-  journal       = "arXiv:1802.05365 [cs]",
-  abstract      = "We introduce a new type of deep contextualized word
-                   representation that models both (1) complex characteristics
-                   of word use (e.g., syntax and semantics), and (2) how these
-                   uses vary across linguistic contexts (i.e., to model
-                   polysemy). Our word vectors are learned functions of the
-                   internal states of a deep bidirectional language model
-                   (biLM), which is pre-trained on a large text corpus. We show
-                   that these representations can be easily added to existing
-                   models and significantly improve the state of the art across
-                   six challenging NLP problems, including question answering,
-                   textual entailment and sentiment analysis. We also present an
-                   analysis showing that exposing the deep internals of the
-                   pre-trained network is crucial, allowing downstream models to
-                   mix different types of semi-supervision signals.",
-  month         =  feb,
-  year          =  2018,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "1802.05365"
 }
 
 @INPROCEEDINGS{Kumaran2009-wo,
@@ -6484,20 +7086,6 @@
   eprint        = "2309.16039"
 }
 
-@ARTICLE{Severyn2015-ai,
-  title     = "Learning to rank short text pairs with convolutional deep neural
-               networks",
-  author    = "Severyn, A and Moschitti, A",
-  journal   = "Proceedings of the 38th international ACM SIGIR",
-  publisher = "dl.acm.org",
-  abstract  = "Learning a similarity function between pairs of objects is at the
-               core of learning to rank approaches. In information retrieval
-               tasks we typically deal with query-document pairs, in question
-               answering--question-answer pairs. However, before learning can
-               take place, such …",
-  year      =  2015
-}
-
 @ARTICLE{Wang2023-zf,
   title         = "Mitigating the impact of false negatives in dense retrieval
                    with contrastive confidence regularization",
@@ -6784,40 +7372,6 @@
   eprint        = "1905.00537"
 }
 
-@MISC{Mahelona2023-yw,
-  title        = "{OpenAI}'s Whisper is another case study in Colonisation",
-  author       = "Mahelona, Keoni and Leoni, Gianna and Duncan, Suzanne and
-                  Thompson, Miles",
-  booktitle    = "Papa Reo",
-  abstract     = "Whisper, a speech recognition model trained on 680,000 hours
-                  of audio taken from the web, demonstrates the problems with
-                  Big Tech and data theft.",
-  month        =  jan,
-  year         =  2023,
-  howpublished = "\url{https://blog.papareo.nz/whisper-is-another-case-study-in-colonisation/}",
-  note         = "Accessed: 2024-2-15"
-}
-
-@MISC{UnknownUnknown-mg,
-  title       = "Yi: A series of large language models trained from scratch by
-                 developers @01-ai",
-  institution = "Github",
-  abstract    = "A series of large language models trained from scratch by
-                 developers @01-ai - 01-ai/Yi",
-  language    = "en"
-}
-
-@MISC{Technomancersai2023-rx,
-  title        = "Japan Goes All In: Copyright Doesn't Apply To {AI} Training",
-  author       = "{Technomancersai}",
-  abstract     = "This news is part of Japan's ambitious plan to become a leader
-                  in AI technology.",
-  month        =  jun,
-  year         =  2023,
-  howpublished = "\url{https://cacm.acm.org/news/273479-japan-goes-all-in-copyright-doesnt-apply-to-ai-training/fulltext}",
-  note         = "Accessed: 2024-2-15"
-}
-
 @ARTICLE{Webber2010-ct,
   title     = "A similarity measure for indefinite rankings",
   author    = "Webber, William and Moffat, Alistair and Zobel, Justin",
@@ -6965,15 +7519,6 @@
   eprint        = "2101.01321"
 }
 
-@MISC{UnknownUnknown-as,
-  title        = "Common Crawl - Kagi Search",
-  abstract     = "Better search results with no ads. Welcome to Kagi (pronounced
-                  kah-gee), a paid search engine that gives power back to the
-                  user.",
-  howpublished = "\url{https://kagi.com/search?q=Common+Crawl}",
-  note         = "Accessed: 2023-11-29"
-}
-
 @ARTICLE{Khattab2020-zh,
   title         = "{ColBERT}: Efficient and effective passage search via
                    contextualized late interaction over {BERT}",
@@ -7012,47 +7557,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.IR",
   eprint        = "2004.12832"
-}
-
-@ARTICLE{Min2023-ty,
-  title         = "{SILO} language models: Isolating legal risk in a
-                   nonparametric datastore",
-  author        = "Min, Sewon and Gururangan, Suchin and Wallace, Eric and
-                   Hajishirzi, Hannaneh and Smith, Noah A and Zettlemoyer, Luke",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "The legality of training language models (LMs) on copyrighted
-                   or otherwise restricted data is under intense debate.
-                   However, as we show, model performance significantly degrades
-                   if trained only on low-risk text (e.g., out-of-copyright
-                   books or government documents), due to its limited size and
-                   domain coverage. We present SILO, a new language model that
-                   manages this risk-performance tradeoff during inference. SILO
-                   is built by (1) training a parametric LM on Open License
-                   Corpus (OLC), a new corpus we curate with 228B tokens of
-                   public domain and permissively licensed text and (2)
-                   augmenting it with a more general and easily modifiable
-                   nonparametric datastore (e.g., containing copyrighted books
-                   or news) that is only queried during inference. The datastore
-                   allows use of high-risk data without training on it, supports
-                   sentence-level data attribution, and enables data producers
-                   to opt out from the model by removing content from the store.
-                   These capabilities can foster compliance with data-use
-                   regulations such as the fair use doctrine in the United
-                   States and the GDPR in the European Union. Our experiments
-                   show that the parametric LM struggles on domains not covered
-                   by OLC. However, access to the datastore greatly improves out
-                   of domain performance, closing 90\% of the performance gap
-                   with an LM trained on the Pile, a more diverse corpus with
-                   mostly high-risk text. We also analyze which nonparametric
-                   approach works best, where the remaining errors lie, and how
-                   performance scales with datastore size. Our results suggest
-                   that it is possible to build high quality language models
-                   while mitigating their legal risk.",
-  month         =  aug,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2308.04430"
 }
 
 @ARTICLE{Su2021-sh,
@@ -7149,41 +7653,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.IR",
   eprint        = "2312.02724"
-}
-
-@ARTICLE{Ram2023-rl,
-  title         = "In-Context retrieval-augmented language models",
-  author        = "Ram, Ori and Levine, Yoav and Dalmedigos, Itay and Muhlgay,
-                   Dor and Shashua, Amnon and Leyton-Brown, Kevin and Shoham,
-                   Yoav",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Retrieval-Augmented Language Modeling (RALM) methods, which
-                   condition a language model (LM) on relevant documents from a
-                   grounding corpus during generation, were shown to
-                   significantly improve language modeling performance. In
-                   addition, they can mitigate the problem of factually
-                   inaccurate text generation and provide natural source
-                   attribution mechanism. Existing RALM approaches focus on
-                   modifying the LM architecture in order to facilitate the
-                   incorporation of external information, significantly
-                   complicating deployment. This paper considers a simple
-                   alternative, which we dub In-Context RALM: leaving the LM
-                   architecture unchanged and prepending grounding documents to
-                   the input, without any further training of the LM. We show
-                   that In-Context RALM that builds on off-the-shelf general
-                   purpose retrievers provides surprisingly large LM gains
-                   across model sizes and diverse corpora. We also demonstrate
-                   that the document retrieval and ranking mechanism can be
-                   specialized to the RALM setting to further boost performance.
-                   We conclude that In-Context RALM has considerable potential
-                   to increase the prevalence of LM grounding, particularly in
-                   settings where a pretrained LM must be used without
-                   modification or even via API access.",
-  month         =  jan,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2302.00083"
 }
 
 @ARTICLE{Sinha2021-dz,
@@ -7309,174 +7778,6 @@
   eprint        = "2105.13947"
 }
 
-@ARTICLE{Shi2023-jl,
-  title         = "In-Context Pretraining: Language modeling beyond document
-                   boundaries",
-  author        = "Shi, Weijia and Min, Sewon and Lomeli, Maria and Zhou,
-                   Chunting and Li, Margaret and Lin, Xi Victoria and Smith,
-                   Noah A and Zettlemoyer, Luke and Yih, Scott and Lewis, Mike",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Large language models (LMs) are currently trained to predict
-                   tokens given document prefixes, enabling them to directly
-                   perform long-form generation and prompting-style tasks which
-                   can be reduced to document completion. Existing pretraining
-                   pipelines train LMs by concatenating random sets of short
-                   documents to create input contexts but the prior documents
-                   provide no signal for predicting the next document. We
-                   instead present In-Context Pretraining, a new approach where
-                   language models are pretrained on a sequence of related
-                   documents, thereby explicitly encouraging them to read and
-                   reason across document boundaries. We can do In-Context
-                   Pretraining by simply changing the document ordering so that
-                   each context contains related documents, and directly
-                   applying existing pretraining pipelines. However, this
-                   document sorting problem is challenging. There are billions
-                   of documents and we would like the sort to maximize
-                   contextual similarity for every document without repeating
-                   any data. To do this, we introduce approximate algorithms for
-                   finding related documents with efficient nearest neighbor
-                   search and constructing coherent input contexts with a graph
-                   traversal algorithm. Our experiments show In-Context
-                   Pretraining offers a simple and scalable approach to
-                   significantly enhance LMs'performance: we see notable
-                   improvements in tasks that require more complex contextual
-                   reasoning, including in-context learning (+8\%), reading
-                   comprehension (+15\%), faithfulness to previous contexts
-                   (+16\%), long-context reasoning (+5\%), and retrieval
-                   augmentation (+9\%).",
-  month         =  oct,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2310.10638"
-}
-
-@ARTICLE{Gu2023-ds,
-  title         = "Pre-training to learn in context",
-  author        = "Gu, Yuxian and Dong, Li and Wei, Furu and Huang, Minlie",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "In-context learning, where pre-trained language models learn
-                   to perform tasks from task examples and instructions in their
-                   contexts, has attracted much attention in the NLP community.
-                   However, the ability of in-context learning is not fully
-                   exploited because language models are not explicitly trained
-                   to learn in context. To this end, we propose PICL
-                   (Pre-training for In-Context Learning), a framework to
-                   enhance the language models' in-context learning ability by
-                   pre-training the model on a large collection of ``intrinsic
-                   tasks'' in the general plain-text corpus using the simple
-                   language modeling objective. PICL encourages the model to
-                   infer and perform tasks by conditioning on the contexts while
-                   maintaining task generalization of pre-trained models. We
-                   evaluate the in-context learning performance of the model
-                   trained with PICL on seven widely-used text classification
-                   datasets and the Super-NaturalInstrctions benchmark, which
-                   contains 100+ NLP tasks formulated to text generation. Our
-                   experiments show that PICL is more effective and
-                   task-generalizable than a range of baselines, outperforming
-                   larger language models with nearly 4x parameters. The code is
-                   publicly available at https://github.com/thu-coai/PICL.",
-  month         =  may,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2305.09137"
-}
-
-@ARTICLE{Mu2023-ti,
-  title         = "Learning to compress prompts with gist tokens",
-  author        = "Mu, Jesse and Li, Xiang Lisa and Goodman, Noah",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Prompting is the primary way to utilize the multitask
-                   capabilities of language models (LMs), but prompts occupy
-                   valuable space in the input context window, and repeatedly
-                   encoding the same prompt is computationally inefficient.
-                   Finetuning and distillation methods allow for specialization
-                   of LMs without prompting, but require retraining the model
-                   for each task. To avoid this trade-off entirely, we present
-                   gisting, which trains an LM to compress prompts into smaller
-                   sets of ``gist'' tokens which can be cached and reused for
-                   compute efficiency. Gist models can be trained with no
-                   additional cost over standard instruction finetuning by
-                   simply modifying Transformer attention masks to encourage
-                   prompt compression. On decoder (LLaMA-7B) and encoder-decoder
-                   (FLAN-T5-XXL) LMs, gisting enables up to 26x compression of
-                   prompts, resulting in up to 40\% FLOPs reductions, 4.2\% wall
-                   time speedups, and storage savings, all with minimal loss in
-                   output quality.",
-  month         =  apr,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2304.08467"
-}
-
-@ARTICLE{Liu2023-oq,
-  title         = "Lost in the middle: How language models use long contexts",
-  author        = "Liu, Nelson F and Lin, Kevin and Hewitt, John and Paranjape,
-                   Ashwin and Bevilacqua, Michele and Petroni, Fabio and Liang,
-                   Percy",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "While recent language models have the ability to take long
-                   contexts as input, relatively little is known about how well
-                   they use longer context. We analyze language model
-                   performance on two tasks that require identifying relevant
-                   information within their input contexts: multi-document
-                   question answering and key-value retrieval. We find that
-                   performance is often highest when relevant information occurs
-                   at the beginning or end of the input context, and
-                   significantly degrades when models must access relevant
-                   information in the middle of long contexts. Furthermore,
-                   performance substantially decreases as the input context
-                   grows longer, even for explicitly long-context models. Our
-                   analysis provides a better understanding of how language
-                   models use their input context and provides new evaluation
-                   protocols for future long-context models.",
-  month         =  jul,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2307.03172"
-}
-
-@ARTICLE{Borgeaud2021-uv,
-  title         = "Improving language models by retrieving from trillions of
-                   tokens",
-  author        = "Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan
-                   and Cai, Trevor and Rutherford, Eliza and Millican, Katie and
-                   van den Driessche, George and Lespiau, Jean-Baptiste and
-                   Damoc, Bogdan and Clark, Aidan and Casas, Diego de Las and
-                   Guy, Aurelia and Menick, Jacob and Ring, Roman and Hennigan,
-                   Tom and Huang, Saffron and Maggiore, Loren and Jones, Chris
-                   and Cassirer, Albin and Brock, Andy and Paganini, Michela and
-                   Irving, Geoffrey and Vinyals, Oriol and Osindero, Simon and
-                   Simonyan, Karen and Rae, Jack W and Elsen, Erich and Sifre,
-                   Laurent",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "We enhance auto-regressive language models by conditioning on
-                   document chunks retrieved from a large corpus, based on local
-                   similarity with preceding tokens. With a $2$ trillion token
-                   database, our Retrieval-Enhanced Transformer (RETRO) obtains
-                   comparable performance to GPT-3 and Jurassic-1 on the Pile,
-                   despite using 25$\times$ fewer parameters. After fine-tuning,
-                   RETRO performance translates to downstream
-                   knowledge-intensive tasks such as question answering. RETRO
-                   combines a frozen Bert retriever, a differentiable encoder
-                   and a chunked cross-attention mechanism to predict tokens
-                   based on an order of magnitude more data than what is
-                   typically consumed during training. We typically train RETRO
-                   from scratch, yet can also rapidly RETROfit pre-trained
-                   transformers with retrieval and still achieve good
-                   performance. Our work opens up new avenues for improving
-                   language models through explicit memory at unprecedented
-                   scale.",
-  month         =  dec,
-  year          =  2021,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2112.04426"
-}
-
 @ARTICLE{Shahmohammadi2023-bo,
   title         = "{ViPE}: Visualise Pretty-much Everything",
   author        = "Shahmohammadi, Hassan and Ghosh, Adhiraj and Lensch, Hendrik
@@ -7541,39 +7842,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2312.09571"
-}
-
-@ARTICLE{Sun2023-oo,
-  title     = "Instruction distillation makes Large Language Models efficient
-               zero-shot rankers",
-  author    = "Sun, Weiwei and Chen, Zheng and Ma, Xinyu and Yan, Lingyong and
-               Wang, Shuaiqiang and Ren, Pengjie and Chen, Zhumin and Yin, Dawei
-               and Ren, Zhaochun",
-  journal   = "arXiv.org",
-  publisher = "arXiv",
-  abstract  = "Recent studies have demonstrated the great potential of Large
-               Language Models (LLMs) serving as zero-shot relevance rankers.
-               The typical approach involves making comparisons between pairs or
-               lists of documents. Although effective, these listwise and
-               pairwise methods are not efficient and also heavily rely on
-               intricate prompt engineering. To tackle this problem, we
-               introduce a novel instruction distillation method. The key idea
-               is to distill the pairwise ranking ability of open-sourced LLMs
-               to a simpler but more efficient pointwise ranking. Specifically,
-               given the same LLM, we first rank documents using the effective
-               pairwise approach with complex instructions, and then distill the
-               teacher predictions to the pointwise approach with simpler
-               instructions. Evaluation results on the BEIR, TREC, and ReDial
-               datasets demonstrate that instruction distillation can improve
-               efficiency by 10 to 100x and also enhance the ranking performance
-               of LLMs. Furthermore, our approach surpasses the performance of
-               existing supervised methods like monoT5 and is on par with the
-               state-of-the-art zero-shot methods. The code to reproduce our
-               results is available at www.github.com/sunnweiwei/RankGPT.",
-  year      =  2023,
-  eprint    = "2311.01555",
-  doi       = "10.48550/ARXIV.2311.01555",
-  language  = "en"
 }
 
 @ARTICLE{Thiel2023-bj,
@@ -7786,31 +8054,12 @@
   doi       = "10.18653/v1/2023.acl-long.99"
 }
 
-@MISC{UnknownUnknown-fv,
-  title        = "Unicode Text Segmentation",
-  howpublished = "\url{https://unicode.org/reports/tr29/}",
-  note         = "Accessed: 2024-1-30"
-}
-
 @MISC{Mazzarino_undated-vw,
   title     = "{NERPII}: A Python Library to Perform Named Entity Recognition
                and Generate Personal Identifiable Information",
   author    = "Mazzarino, Simona and Minieri, Andrea and Gilli, Luca",
   publisher = "ceur-ws.org",
   year      =  2023
-}
-
-@MISC{UnknownUnknown-ck,
-  title        = "Allow installing `provides\_extras` from local wheel file ·
-                  Issue \#9694 · pypa/pip",
-  booktitle    = "GitHub",
-  abstract     = "What's the problem this feature will solve? Would like pip
-                  install mypackage-0.1.0-py3-none-any.whl to be able to
-                  optionally install the provides\_extras metadata present
-                  within the wheel. Describe the solution you'd like Consider a
-                  packa...",
-  howpublished = "\url{https://github.com/pypa/pip/issues/9694}",
-  note         = "Accessed: 2023-11-26"
 }
 
 @MISC{UnknownUnknown-qj,
@@ -8235,15 +8484,6 @@
   eprint        = "2007.00808"
 }
 
-@ARTICLE{Corry2021-pv,
-  title   = "The problem of zombie datasets: A framework for deprecating
-             datasets",
-  author  = "Corry, Frances and Sridharan, H and Luccioni, A and Ananny, Mike
-             and Schultz, J and Crawford, Kate",
-  journal = "arXiv.org",
-  year    =  2021
-}
-
 @ARTICLE{Turski2023-fi,
   title         = "{CCpdf}: Building a high quality corpus for visually rich
                    documents from web crawl data",
@@ -8411,21 +8651,6 @@
   primaryClass  = "cs.CY",
   eprint        = "2306.13141",
   doi           = "10.48550/arXiv.2306.13141"
-}
-
-@INCOLLECTION{Alby2022-xx,
-  title     = "Analyzing the web: Are top websites lists a good choice for
-               research?",
-  author    = "Alby, Tom and Jäschke, Robert",
-  booktitle = "Linking Theory and Practice of Digital Libraries",
-  publisher = "Springer International Publishing",
-  address   = "Cham",
-  pages     = "11--25",
-  series    = "Lecture notes in computer science",
-  year      =  2022,
-  doi       = "10.1007/978-3-031-16802-4\_2",
-  isbn      = "9783031168017,9783031168024",
-  issn      = "0302-9743,1611-3349"
 }
 
 @ARTICLE{Jo2019-gq,
@@ -8974,17 +9199,6 @@
   eprint        = "2402.11782"
 }
 
-@MISC{UnknownUnknown-no,
-  title       = "presidio: Context aware, pluggable and customizable data
-                 protection and de-identification {SDK} for text and images",
-  institution = "Github",
-  abstract    = "Context aware, pluggable and customizable data protection and
-                 de-identification SDK for text and images - GitHub -
-                 microsoft/presidio: Context aware, pluggable and customizable
-                 data protection and de-identification SDK for text and images",
-  language    = "en"
-}
-
 @ARTICLE{Singh2023-dk,
   title    = "The Confidence-Competence Gap in Large Language Models: A
               Cognitive Study",
@@ -9131,29 +9345,6 @@
   eprint        = "2301.03988"
 }
 
-@INPROCEEDINGS{Broder2002-ra,
-  title     = "On the resemblance and containment of documents",
-  author    = "Broder, A Z",
-  booktitle = "Proceedings. Compression and Complexity of SEQUENCES 1997 (Cat.
-               No.97TB100171)",
-  publisher = "IEEE Comput. Soc",
-  pages     = "21--29",
-  abstract  = "Given two documents A and B we define two mathematical notions:
-               their resemblance r(A, B) and their containment c(A, B) that seem
-               to capture well the informal notions of ``roughly the same'' and
-               ``roughly contained.'' The basic idea is to reduce these issues
-               to set intersection problems that can be easily evaluated by a
-               process of random sampling that can be done independently for
-               each document. Furthermore, the resemblance can be evaluated
-               using a fixed size sample for each document. This paper discusses
-               the mathematical properties of these measures and the efficient
-               implementation of the sampling process using Rabin (1981)
-               fingerprints.",
-  year      =  2002,
-  doi       = "10.1109/sequen.1997.666900",
-  isbn      =  9780818681325
-}
-
 @ARTICLE{Jiang2024-zj,
   title         = "Investigating data contamination for pre-training language
                    models",
@@ -9257,30 +9448,6 @@
   year      =  2013,
   doi       = "10.1145/2492517.2492646",
   isbn      =  9781450322409
-}
-
-@MISC{PetersonUnknown-dv,
-  title       = "openwebtext: Open clone of {OpenAI}'s unreleased {WebText}
-                 dataset scraper. This version uses pushshift.io files instead
-                 of the {API} for speed",
-  author      = "Peterson, Joshua",
-  institution = "Github",
-  abstract    = "Open clone of OpenAI's unreleased WebText dataset scraper. This
-                 version uses pushshift.io files instead of the API for speed. -
-                 GitHub - jcpeterson/openwebtext: Open clone of OpenAI's
-                 unreleased WebText dataset scraper. This version uses
-                 pushshift.io files instead of the API for speed.",
-  language    = "en"
-}
-
-@ARTICLE{Radford2019-vq,
-  title    = "Language Models are Unsupervised Multitask Learners",
-  author   = "Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and
-              Amodei, Dario and Sutskever, Ilya",
-  abstract = "🏆 SOTA for Language Modelling on enwik8 (Bit per Character (BPC)
-              metric)",
-  month    =  feb,
-  year     =  2019
 }
 
 @ARTICLE{Gemini-Team2023-gn,
@@ -11566,52 +11733,6 @@
   isbn      =  9781450380164
 }
 
-@MISC{Lucy1991-uf,
-  title   = "The Ernst \& Young approach to facilities management",
-  author  = "Lucy, J de and de Lucy, J",
-  journal = "Property Management",
-  volume  =  9,
-  number  =  1,
-  pages   = "24--31",
-  year    =  1991,
-  doi     = "10.1108/02637479110029793"
-}
-
-@ARTICLE{Ushio2022-kq,
-  title         = "Generative Language Models for Paragraph-Level Question
-                   Generation",
-  author        = "Ushio, Asahi and Alva-Manchego, Fernando and
-                   Camacho-Collados, Jose",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Powerful generative models have led to recent progress in
-                   question generation (QG). However, it is difficult to measure
-                   advances in QG research since there are no standardized
-                   resources that allow a uniform comparison among approaches.
-                   In this paper, we introduce QG-Bench, a multilingual and
-                   multidomain benchmark for QG that unifies existing question
-                   answering datasets by converting them to a standard QG
-                   setting. It includes general-purpose datasets such as SQuAD
-                   for English, datasets from ten domains and two styles, as
-                   well as datasets in eight different languages. Using QG-Bench
-                   as a reference, we perform an extensive analysis of the
-                   capabilities of language models for the task. First, we
-                   propose robust QG baselines based on fine-tuning generative
-                   language models. Then, we complement automatic evaluation
-                   based on standard metrics with an extensive manual
-                   evaluation, which in turn sheds light on the difficulty of
-                   evaluating QG models. Finally, we analyse both the domain
-                   adaptability of these models as well as the effectiveness of
-                   multilingual models in languages other than English. QG-Bench
-                   is released along with the fine-tuned models presented in the
-                   paper https://github.com/asahi417/lm-question-generation,
-                   which are also available as a demo https://autoqg.net/.",
-  month         =  oct,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2210.03992"
-}
-
 @ARTICLE{Dasigi2021-tv,
   title         = "A Dataset of Information-Seeking Questions and Answers
                    Anchored in Research Papers",
@@ -12485,44 +12606,6 @@
   language  = "en"
 }
 
-@ARTICLE{Krishna2023-do,
-  title         = "{USB}: A unified summarization benchmark across tasks and
-                   domains",
-  author        = "Krishna, Kundan and Gupta, Prakhar and Ramprasad, Sanjana and
-                   Wallace, Byron C and Bigham, Jeffrey P and Lipton, Zachary C",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "An abundance of datasets exist for training and evaluating
-                   models on the task of summary generation.However, these
-                   datasets are often derived heuristically, and lack sufficient
-                   annotations to support research into all aspects of
-                   summarization, such as evidence extraction and controllable
-                   summarization. We introduce a benchmark comprising 8 tasks
-                   that require multi-dimensional understanding of
-                   summarization, e.g., surfacing evidence for a summary,
-                   assessing its correctness, and gauging its relevance to
-                   different topics. We compare various methods on this
-                   benchmark and discover that on multiple tasks,
-                   moderately-sized fine-tuned models consistently outperform
-                   much larger few-shot prompted language models. For factuality
-                   related tasks, we also evaluate existing heuristics to create
-                   training data and find that training on them performs worse
-                   than training on $20\times$ less human-labeled data. Our
-                   benchmark consists of data from 6 different domains, allowing
-                   us to study cross-domain performance of trained models. We
-                   find that for some tasks, the amount of training data matters
-                   more than the domain where it comes from, while for other
-                   tasks training specifically on data from the target domain,
-                   even if limited, is more beneficial. Our work fulfills the
-                   need for a well-annotated summarization benchmark with
-                   diverse tasks, and provides useful insights about the impact
-                   of the quality, size and domain of training data.",
-  month         =  may,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2305.14296"
-}
-
 @ARTICLE{Ni2021-ku,
   title         = "Large Dual Encoders Are Generalizable Retrievers",
   author        = "Ni, Jianmo and Qu, Chen and Lu, Jing and Dai, Zhuyun and
@@ -12743,21 +12826,6 @@
   pmid      =  34024942,
   issn      = "0031-8116,1573-0883",
   language  = "en"
-}
-
-@MISC{McCoy2023-iz,
-  title        = "When language models produce text, is the text novel or copied
-                  from the training set?For answers, come to our poster today at
-                  \#acl2023nlp! Session 1 posters, 11:00 - 12:30 {todayCritics*}
-                  are calling the work ``monumental''Link to paper:
-                  https://t.co/{s6kDlGA3IH1}/2 pic.twitter.com/{qw1cKUMZvk}",
-  author       = "McCoy, Tom",
-  booktitle    = "Twitter",
-  month        =  jul,
-  year         =  2023,
-  howpublished = "\url{https://twitter.com/rtommccoy/status/1678378978925506562?s=12\&t=jr8t7woBh6WnXaXmdrUbIw}",
-  note         = "Accessed: 2023-7-11",
-  language     = "en"
 }
 
 @ARTICLE{McCoy2023-pk,
@@ -13013,61 +13081,6 @@
   eprint        = "2309.17425"
 }
 
-@ARTICLE{Yao2022-kh,
-  title         = "{ReAct}: Synergizing Reasoning and Acting in Language Models",
-  author        = "Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and
-                   Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "While large language models (LLMs) have demonstrated
-                   impressive capabilities across tasks in language
-                   understanding and interactive decision making, their
-                   abilities for reasoning (e.g. chain-of-thought prompting) and
-                   acting (e.g. action plan generation) have primarily been
-                   studied as separate topics. In this paper, we explore the use
-                   of LLMs to generate both reasoning traces and task-specific
-                   actions in an interleaved manner, allowing for greater
-                   synergy between the two: reasoning traces help the model
-                   induce, track, and update action plans as well as handle
-                   exceptions, while actions allow it to interface with external
-                   sources, such as knowledge bases or environments, to gather
-                   additional information. We apply our approach, named ReAct,
-                   to a diverse set of language and decision making tasks and
-                   demonstrate its effectiveness over state-of-the-art
-                   baselines, as well as improved human interpretability and
-                   trustworthiness over methods without reasoning or acting
-                   components. Concretely, on question answering (HotpotQA) and
-                   fact verification (Fever), ReAct overcomes issues of
-                   hallucination and error propagation prevalent in
-                   chain-of-thought reasoning by interacting with a simple
-                   Wikipedia API, and generates human-like task-solving
-                   trajectories that are more interpretable than baselines
-                   without reasoning traces. On two interactive decision making
-                   benchmarks (ALFWorld and WebShop), ReAct outperforms
-                   imitation and reinforcement learning methods by an absolute
-                   success rate of 34\% and 10\% respectively, while being
-                   prompted with only one or two in-context examples. Project
-                   site with code: https://react-lm.github.io",
-  month         =  oct,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2210.03629"
-}
-
-@MISC{QueerUnknown-fk,
-  title        = "Queer In {AI}: A Case Study in Community-Led Participatory
-                  {AI}",
-  author       = "Queer, Organizers Of Queerinai and Anaelia Ovalle Queer In AI,
-                  U S A and Queer, Arjun Subramonian and Queer, Ashwin Singh and
-                  Queer, Claas Voelcker and Sutherland Queer, Danica J and
-                  Queer, Davide Locatelli and Queer, Eva Breznik and Queer,
-                  Filip Klubicka and Queer, Hang Yuan and Queer, Hetvi J",
-  howpublished = "\url{https://dl.acm.org/doi/10.1145/3593013.3594134}",
-  note         = "Accessed: 2024-2-5",
-  doi          = "10.1145/3593013.3594134",
-  language     = "en"
-}
-
 @ARTICLE{Weller2023-gq,
   title         = "When do generative query and document expansions fail? A
                    comprehensive study across methods, retrievers, and datasets",
@@ -13195,19 +13208,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   eprint        = "2406.19146"
-}
-
-@INPROCEEDINGS{Kamalloo2023-qj,
-  title     = "Limitations of open-domain question answering benchmarks for
-               document-level reasoning",
-  author    = "Kamalloo, Ehsan and Clarke, Charles L A and Rafiei, Davood",
-  booktitle = "Proceedings of the 46th International ACM SIGIR Conference on
-               Research and Development in Information Retrieval",
-  publisher = "ACM",
-  address   = "New York, NY, USA",
-  month     =  jul,
-  year      =  2023,
-  doi       = "10.1145/3539618.3592011"
 }
 
 @ARTICLE{Muennighoff2023-sk,
