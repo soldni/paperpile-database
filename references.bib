@@ -13848,3 +13848,147 @@
   primaryClass  = "cs.CL",
   eprint        = "2502.14739"
 }
+
+@ARTICLE{Mayilvahanan2025-zi,
+  title         = "{LLMs} on the line: Data determines loss-to-loss scaling laws",
+  author        = "Mayilvahanan, Prasanna and Wiedemer, Thaddäus and Mallick,
+                   Sayak and Bethge, Matthias and Brendel, Wieland",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Scaling laws guide the development of large language models
+                   (LLMs) by offering estimates for the optimal balance of model
+                   size, tokens, and compute. More recently, loss-to-loss
+                   scaling laws that relate losses across pretraining datasets
+                   and downstream tasks have emerged as a powerful tool for
+                   understanding and improving LLM performance. In this work, we
+                   investigate which factors most strongly influence
+                   loss-to-loss scaling. Our experiments reveal that the
+                   pretraining data and tokenizer determine the scaling trend.
+                   In contrast, model size, optimization hyperparameters, and
+                   even significant architectural differences, such as between
+                   transformer-based models like Llama and state-space models
+                   like Mamba, have limited impact. Consequently, practitioners
+                   should carefully curate suitable pretraining datasets for
+                   optimal downstream performance, while architectures and other
+                   settings can be freely optimized for training efficiency.",
+  month         =  feb,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2502.12120"
+}
+
+@ARTICLE{Kumar2024-ov,
+  title         = "Scaling laws for precision",
+  author        = "Kumar, Tanishq and Ankner, Zachary and Spector, Benjamin F
+                   and Bordelon, Blake and Muennighoff, Niklas and Paul,
+                   Mansheej and Pehlevan, Cengiz and Ré, Christopher and
+                   Raghunathan, Aditi",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Low precision training and inference affect both the quality
+                   and cost of language models, but current scaling laws do not
+                   account for this. In this work, we devise ``precision-aware''
+                   scaling laws for both training and inference. We propose that
+                   training in lower precision reduces the model's ``effective
+                   parameter count,'' allowing us to predict the additional loss
+                   incurred from training in low precision and post-train
+                   quantization. For inference, we find that the degradation
+                   introduced by post-training quantization increases as models
+                   are trained on more data, eventually making additional
+                   pretraining data actively harmful. For training, our scaling
+                   laws allow us to predict the loss of a model with different
+                   parts in different precisions, and suggest that training
+                   larger models in lower precision may be compute optimal. We
+                   unify the scaling laws for post and pretraining quantization
+                   to arrive at a single functional form that predicts
+                   degradation from training and inference in varied precisions.
+                   We fit on over 465 pretraining runs and validate our
+                   predictions on model sizes up to 1.7B parameters trained on
+                   up to 26B tokens.",
+  month         =  nov,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2411.04330"
+}
+
+@ARTICLE{Chen2025-ef,
+  title         = "How new data permeates {LLM} knowledge and how to dilute it",
+  author        = "Chen, Sun and Renat, Aksitov and Andrey, Zhmoginov and
+                   Miller, Nolan Andrew and Max, Vladymyrov and Ulrich, Rueckert
+                   and Been, Kim and Mark, Sandler",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large language models learn and continually learn through the
+                   accumulation of gradient-based updates, but how individual
+                   pieces of new information affect existing knowledge, leading
+                   to both beneficial generalization and problematic
+                   hallucination, remains poorly understood. We demonstrate that
+                   when learning new information, LLMs exhibit a ``priming''
+                   effect: learning a new fact can cause the model to
+                   inappropriately apply that knowledge in unrelated contexts.
+                   To systematically study this phenomenon, we introduce
+                   ``Outlandish,'' a carefully curated dataset of 1320 diverse
+                   text samples designed to probe how new knowledge permeates
+                   through an LLM's existing knowledge base. Using this dataset,
+                   we show that the degree of priming after learning new
+                   information can be predicted by measuring the token
+                   probability of key words before learning. This relationship
+                   holds robustly across different model architectures (PALM-2,
+                   Gemma, Llama), sizes, and training stages. Finally, we
+                   develop two novel techniques to modulate how new knowledge
+                   affects existing model behavior: (1) a ``stepping-stone''
+                   text augmentation strategy and (2) an ``ignore-k'' update
+                   pruning method. These approaches reduce undesirable priming
+                   effects by 50-95\% while preserving the model's ability to
+                   learn new information. Our findings provide both empirical
+                   insights into how LLMs learn and practical tools for
+                   improving the specificity of knowledge insertion in language
+                   models. Further materials:
+                   https://sunchipsster1.github.io/projects/outlandish/",
+  month         =  apr,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2504.09522"
+}
+
+@ARTICLE{Fang2024-hj,
+  title         = "What is wrong with perplexity for long-context language
+                   modeling?",
+  author        = "Fang, Lizhe and Wang, Yifei and Liu, Zhaoyang and Zhang,
+                   Chenheng and Jegelka, Stefanie and Gao, Jinyang and Ding,
+                   Bolin and Wang, Yisen",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Handling long-context inputs is crucial for large language
+                   models (LLMs) in tasks such as extended conversations,
+                   document summarization, and many-shot in-context learning.
+                   While recent approaches have extended the context windows of
+                   LLMs and employed perplexity (PPL) as a standard evaluation
+                   metric, PPL has proven unreliable for assessing long-context
+                   capabilities. The underlying cause of this limitation has
+                   remained unclear. In this work, we provide a comprehensive
+                   explanation for this issue. We find that PPL overlooks key
+                   tokens, which are essential for long-context understanding,
+                   by averaging across all tokens and thereby obscuring the true
+                   performance of models in long-context scenarios. To address
+                   this, we propose \textbf{LongPPL}, a novel metric that
+                   focuses on key tokens by employing a long-short context
+                   contrastive method to identify them. Our experiments
+                   demonstrate that LongPPL strongly correlates with performance
+                   on various long-context benchmarks (e.g., Pearson correlation
+                   of -0.96), significantly outperforming traditional PPL in
+                   predictive accuracy. Additionally, we introduce
+                   \textbf{LongCE} (Long-context Cross-Entropy) loss, a
+                   re-weighting strategy for fine-tuning that prioritizes key
+                   tokens, leading to consistent improvements across diverse
+                   benchmarks. In summary, these contributions offer deeper
+                   insights into the limitations of PPL and present effective
+                   solutions for accurately evaluating and enhancing the
+                   long-context capabilities of LLMs. Code is available at
+                   https://github.com/PKU-ML/LongPPL.",
+  month         =  oct,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2410.23771",
+  doi           = "10.48550/arXiv.2410.23771"
+}
