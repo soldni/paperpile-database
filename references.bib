@@ -1346,6 +1346,53 @@
            pretraining research"
 }
 
+@ARTICLE{Baumann2025-kn,
+  title         = "Large language model hacking: Quantifying the hidden risks of
+                   using {LLMs} for text annotation",
+  author        = "Baumann, Joachim and Röttger, Paul and Urman, Aleksandra and
+                   Wendsjö, Albert and Plaza-del-Arco, Flor Miriam and Gruber,
+                   Johannes B and Hovy, Dirk",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large language models (LLMs) are rapidly transforming social
+                   science research by enabling the automation of
+                   labor-intensive tasks like data annotation and text analysis.
+                   However, LLM outputs vary significantly depending on the
+                   implementation choices made by researchers (e.g., model
+                   selection, prompting strategy, or temperature settings). Such
+                   variation can introduce systematic biases and random errors,
+                   which propagate to downstream analyses and cause Type I, Type
+                   II, Type S, or Type M errors. We call this LLM hacking. We
+                   quantify the risk of LLM hacking by replicating 37 data
+                   annotation tasks from 21 published social science research
+                   studies with 18 different models. Analyzing 13 million LLM
+                   labels, we test 2,361 realistic hypotheses to measure how
+                   plausible researcher choices affect statistical conclusions.
+                   We find incorrect conclusions based on LLM-annotated data in
+                   approximately one in three hypotheses for state-of-the-art
+                   models, and in half the hypotheses for small language models.
+                   While our findings show that higher task performance and
+                   better general model capabilities reduce LLM hacking risk,
+                   even highly accurate models do not completely eliminate it.
+                   The risk of LLM hacking decreases as effect sizes increase,
+                   indicating the need for more rigorous verification of
+                   findings near significance thresholds. Our extensive analysis
+                   of LLM hacking mitigation techniques emphasizes the
+                   importance of human annotations in reducing false positive
+                   findings and improving model selection. Surprisingly, common
+                   regression estimator correction techniques are largely
+                   ineffective in reducing LLM hacking risk, as they heavily
+                   trade off Type I vs. Type II errors. Beyond accidental
+                   errors, we find that intentional LLM hacking is unacceptably
+                   simple. With few LLMs and just a handful of prompt
+                   paraphrases, anything can be presented as statistically
+                   significant.",
+  month         =  sep,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2509.08825"
+}
+
 @ARTICLE{Zhan2021-mp,
   title         = "Optimizing Dense Retrieval model training with hard negatives",
   author        = "Zhan, Jingtao and Mao, Jiaxin and Liu, Yiqun and Guo, Jiafeng
