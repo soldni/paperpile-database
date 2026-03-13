@@ -13902,6 +13902,51 @@
   doi       = "10.18653/v1/2025.acl-long.1163"
 }
 
+@ARTICLE{Kazdan2026-lq,
+  title         = "Scale Dependent Data Duplication",
+  author        = "Kazdan, Joshua and Levi, Noam and Schaeffer, Rylan and
+                   Chudnovsky, Jessica and Puri, Abhay and He, Bo and Donmez,
+                   Mehmet and Koyejo, Sanmi and Donoho, David",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Data duplication during pretraining can degrade
+                   generalization and lead to memorization, motivating
+                   aggressive deduplication pipelines. However, at web scale, it
+                   is unclear what constitutes a ``duplicate'': beyond
+                   surface-form matches, semantically equivalent documents (e.g.
+                   translations) may induce redundant training signals once
+                   models become sufficiently capable. Practically, this means
+                   that semantic duplicates operate increasingly like exact
+                   duplicates during training. We present evidence that
+                   duplication is scale-dependent in two ways. First, as model
+                   capability increases, cross-entropy loss gradients for
+                   semantically equivalent documents become more aligned.
+                   Smaller models, by contrast, produce gradients that reflect
+                   surface similarity (e.g., shared tokens) rather than semantic
+                   similarity. Second, we embedded all 192 million
+                   FineWeb-Edu-Dedup documents using EmbeddingGemma-300m. For
+                   moderate corpus sizes, the cosine similarity between
+                   nearest-neighbors follows an isotropic power law baseline.
+                   However, as corpus size grows to hundreds of billions of
+                   tokens, the nearest-neighbor similarities deviate sharply,
+                   indicating accelerated semantic collisions. Finally,
+                   controlled pretraining on data sampled with replacement from
+                   pools of finite unique documents shows that limited
+                   uniqueness yields mild degradation for small models, but
+                   rapidly increasing loss penalties for larger models, breaking
+                   naive scaling extrapolation. We derive explicit scaling laws
+                   that allow practitioners to estimate deviation from expected
+                   scaling due to limited semantic uniqueness of the pretraining
+                   corpus. Our results identify and resolve an unstudied source
+                   of scale-dependence, allowing for more accurate prediction at
+                   scale.",
+  month         =  feb,
+  year          =  2026,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2603.06603",
+  doi           = "10.48550/arXiv.2603.06603"
+}
+
 @ARTICLE{UnknownUnknown-ki,
   title = "Molmo and {PixMo}: Open weights and open data for state-of-the-art
            multimodal models"
