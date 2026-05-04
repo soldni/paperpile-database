@@ -1244,6 +1244,84 @@
   doi           = "10.48550/arXiv.2604.03444"
 }
 
+@ARTICLE{Chen2026-wy,
+  title         = "Olmix: A framework for data mixing throughout {LM}
+                   development",
+  author        = "Chen, Mayee F and Murray, Tyler and Heineman, David and
+                   Jordan, Matt and Hajishirzi, Hannaneh and Ré, Christopher and
+                   Soldaini, Luca and Lo, Kyle",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Data mixing -- determining the ratios of data from different
+                   domains -- is a first-order concern for training language
+                   models (LMs). While existing mixing methods show promise,
+                   they fall short when applied during real-world LM
+                   development. We present Olmix, a framework that addresses two
+                   such challenges. First, the configuration space for
+                   developing a mixing method is not well understood -- design
+                   choices across existing methods lack justification or
+                   consensus and overlook practical issues like data
+                   constraints. We conduct a comprehensive empirical study of
+                   this space, identifying which design choices lead to a strong
+                   mixing method. Second, in practice, the domain set evolves
+                   throughout LM development as datasets are added, removed,
+                   partitioned, and revised -- a problem setting largely
+                   unaddressed by existing works, which assume fixed domains. We
+                   study how to efficiently recompute the mixture after the
+                   domain set is updated, leveraging information from past
+                   mixtures. We introduce mixture reuse, a mechanism that reuses
+                   existing ratios and recomputes ratios only for domains
+                   affected by the update. Over a sequence of five domain-set
+                   updates mirroring real-world LM development, mixture reuse
+                   matches the performance of fully recomputing the mix after
+                   each update with 74\% less compute and improves over training
+                   without mixing by 11.6\% on downstream tasks.",
+  month         =  feb,
+  year          =  2026,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2602.12237",
+  doi           = "10.48550/arXiv.2602.12237"
+}
+
+@ARTICLE{Chang2026-vv,
+  title         = "{How2Everything}: Mining the web for how-to procedures to
+                   evaluate and improve {LLMs}",
+  author        = "Chang, Yapei and Lo, Kyle and Iyyer, Mohit and Soldaini, Luca",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Generating step-by-step ``how-to'' procedures is a key LLM
+                   capability: how-to advice is commonly requested in chatbots,
+                   and step-by-step planning is critical for reasoning over
+                   complex tasks. Yet, measuring and improving procedural
+                   validity at scale on real-world tasks remains challenging and
+                   understudied. To address this, we introduce How2Everything, a
+                   scalable framework to evaluate and improve goal-conditioned
+                   procedure generation. Our framework includes How2Mine, which
+                   mines 351K procedures from 980K web pages across 14 topics
+                   and readily scales to larger corpora. From this pool we build
+                   How2Bench, a 7K-example evaluation set balanced across
+                   topics. To reliably score model outputs, we develop
+                   How2Score, an evaluation protocol that uses an LLM judge to
+                   detect whether a generation contains any critical failure
+                   that would prevent achieving the goal. For low-cost,
+                   reproducible evaluation, we distill a frontier model into an
+                   open 8B model, achieving 80.5\% agreement with human
+                   annotators. How2Bench reveals clear scaling trends across
+                   model sizes and training stages, providing signal early in
+                   pretraining. Finally, RL using How2Score as a reward improves
+                   performance on How2Bench by >10 points across three models
+                   without systematic regressions on standard benchmarks, with
+                   gains robust to superficial source-document memorization or
+                   format compliance. Taken together, How2Everything shows how
+                   pretraining web data can support a closed loop of capability
+                   evaluation and improvement at scale.",
+  month         =  feb,
+  year          =  2026,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2602.08808",
+  doi           = "10.48550/arXiv.2602.08808"
+}
+
 @INPROCEEDINGS{Guo2017-zy,
   title     = "On Calibration of Modern Neural Networks",
   author    = "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q",
